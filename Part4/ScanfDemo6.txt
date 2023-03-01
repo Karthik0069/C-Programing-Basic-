@@ -1,0 +1,10 @@
+#include <stdio.h>
+void main() {
+	int intValue;
+	float floatValue;
+	char charValue;
+	printf("Enter an int, float and a char value : ");
+	// Read a 3 digits int value, 5 digits float value and a character using scanf()
+	scanf("%3d %5f %1c",&intValue,&floatValue,&charValue);
+	printf("The given data is : %d, %f, %c\n", intValue, floatValue, charValue);
+}

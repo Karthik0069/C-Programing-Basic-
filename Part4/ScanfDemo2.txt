@@ -1,0 +1,7 @@
+#include <stdio.h>
+void main() {
+	int date, month, year;
+	printf("Enter your date of birth in yyyy.mm.dd format : ");
+	scanf("%d.%d.%d", &year, &month, &date);
+	printf("My DOB is : %d.%d.%d\n", year, month, date);
+}

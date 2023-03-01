@@ -1,0 +1,7 @@
+#include <stdio.h>
+void main() {
+	int date, month, year;
+	printf("Enter your date of birth in the format yyyy-mm-dd : ");
+	scanf("%d-%d-%d",&year,&month,&date); //complete this statement to read in the above format
+	printf("I was born on %d/%d/%d\n", year, month, date);
+}

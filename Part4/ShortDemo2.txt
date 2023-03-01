@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	short int number1 = 20, number2 = 30,sub;
+	sub = number1 - number2;
+	printf("Difference of the given two values = %d\n", sub);
+}

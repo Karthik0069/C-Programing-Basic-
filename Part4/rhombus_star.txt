@@ -1,0 +1,34 @@
+#include <stdio.h>
+void main() {
+	int rows, temp;
+	printf("Enter rows : ");
+	scanf("%d", &rows);
+	temp = rows;
+	for (int i = rows - 1; i > 0; i--) {
+		printf(" ");
+	}
+	for (int i = 0; i < rows; i++) {
+		printf("*");
+	}
+	printf("\n");
+	for (int i = 0; i < rows - 2; i++) {
+		for (int j = temp - 2; j > 0; j--) {
+			printf(" ");
+		}
+		temp--;
+		for (int k = 0; k < rows; k++) {
+			if((k == 0) || (k == rows - 1)) {
+				printf("*");
+			} else {
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+	if(rows != 1) {
+		for (int i = 0; i < rows; i++) {
+			printf("*");
+		}
+	}
+	printf("\n");
+}

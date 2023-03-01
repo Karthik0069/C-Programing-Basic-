@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main() {
+	float sales_amount,commission;
+	printf("Enter the sales amount : ");
+	scanf("%f", &sales_amount);
+	if(sales_amount >= 5000) {
+		commission = (sales_amount * 0.08) + 250.0;
+		printf("The commission of the salesman : %f\n", commission);
+	}
+	else {
+		commission = (sales_amount * 0.05);
+		printf("The commission of the salesman : %f\n", commission);
+	}
+}

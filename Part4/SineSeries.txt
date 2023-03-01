@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main() {
+	int n, i;
+	float degrees, radians, sum, term;
+	printf("Enter the value of n : ");
+	scanf("%d", &n);
+	printf("Enter degrees : ");
+	scanf("%f", &degrees);
+	radians = (degrees * 3.14) / 180; //converting degrees to radians
+	term = sum = radians;
+	for (i = 1; i < n; i++) {
+		term = ((-term) * (radians * radians)) / ((2 * i) * (2 * i + 1));
+		sum = sum + term;
+	}
+	printf("The sine value sin(%5.2f) = %f\n", degrees, sum);
+}

@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	float x1,x2,y1,y2,slope,midx,midy;
+	printf("Enter x and y coordinates of Endpoint-1 : ");
+	scanf("%f%f", &x1,&y1);
+	printf("Enter x and y coordinates of Endpoint-2 : ");
+	scanf("%f%f", &x2,&y2);
+	printf("The given endpoints of a line : (%f, %f) and (%f, %f)\n", x1,y1,x2,y2);
+	slope = ((y2 - y1) / (x2 - x1));
+	midx = ((x1 + x2) / 2);midy = ((y1 + y2) / 2);
+	printf("Slope : %f\nMidpoint : (%f, %f)\n", slope,midx,midy);
+}

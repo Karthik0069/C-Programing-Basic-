@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main() {
+	float floattype;
+	double doubletype;
+	printf("Size of int: %zu bytes\n", sizeof(int)); //Write the correct code
+	printf("Size of float: %zu bytes\n", sizeof(floattype)); //Write the correct code
+	printf("Size of double: %zu bytes\n", sizeof(doubletype)); //Write the correct code
+	printf("Size of char: %zu byte\n", sizeof(char)); //Write the correct code
+}

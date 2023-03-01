@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main() {
+	int value;
+	printf("Enter a value : ");
+	scanf("%d", &value);
+	switch (value) {
+		case 1:
+			printf("One\n");
+		case 2:
+			printf("Two\n");
+		case 3:
+			printf("Three\n");
+		case 10:
+			printf("Ten\n");
+			break;
+	}
+}

@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	float amount, rate, simple_interest;
+	int months;
+	printf("Provide amount and interest in the format $amount rate%% : ");
+	// Read amount and rate using scanf()
+	scanf("$%f%f%%",&amount,&rate);
+	printf("Enter the period in months : ");
+	scanf("%d", &months);
+	simple_interest = (amount * rate * months)/100; // Fill the missing expression to calculate simple interest
+	printf("Simple interest : %f\n", simple_interest);
+}

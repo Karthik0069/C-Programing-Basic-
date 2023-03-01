@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main() {
+	short int value1;
+	double value2;
+	long double value3;
+	printf("Enter a short int, double and long double value : ");
+	scanf("%hd%lf%Le", &value1, &value2, &value3); // Write the format characters
+	printf("The given values are : %hd, %lf, %Le\n", value1, value2, value3);
+}

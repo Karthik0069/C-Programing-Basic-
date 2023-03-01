@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main() {
+	char ch;
+	int op;
+	printf("1. Lowercase to Uppercase\n2. Uppercase to Lowercase\nEnter your option : ");
+	scanf("%d", &op);
+	switch (op) {
+		case 1:printf("Enter a lowercase character : ");
+		       scanf(" %c", &ch);
+		      if((ch >= 65) && (ch <= 90)) {
+		      	printf("%c is not a lowercase character\n", ch);
+		      } else {
+		      	ch = (char)(ch - 32);
+		      	printf("Uppercase character : %c\n", ch);
+		      }break;
+		 case 2:printf("Enter an uppercase character : ");
+			scanf(" %c", &ch);
+			if((ch >= 97) && (ch <= 122)) {
+				printf("%c is not an uppercase character\n", ch);
+			} else {
+				ch = (char)(ch + 32);
+				printf("Lowercase character : %c\n", ch);
+			}break;
+		default : printf("Please enter a valid option\n");break;
+	}
+}

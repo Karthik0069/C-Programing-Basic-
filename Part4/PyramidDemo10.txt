@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	int rowIndex, num,n;
+	printf("Enter n value: ");
+	scanf("%d", &n);
+	for (rowIndex = 1; rowIndex <= n; rowIndex++) { // Fill in the missing code
+		for (num = 1; num <= rowIndex; num++) { // Fill in the missing code
+			printf("%d ", rowIndex * num);
+		}
+		printf("\n");
+	}
+}

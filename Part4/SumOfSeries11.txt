@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+int fact(int );
+void main() {
+	float sum = 1, x, n;
+	printf("Enter value of x : ");
+	scanf("%f", &x);
+	printf("Enter n value : ");
+	scanf("%f", &n);
+	for (int i = 1; i <= n; i++) {
+		sum = sum + (pow(x, i)/fact(i));
+	}
+	printf("Sum of series : %f\n", sum);
+}
+int fact(int x) {
+	float factt = 1.0;
+	for (int i = 1; i <= x; i++) {
+		factt = factt * i;
+	}
+	return factt;
+}

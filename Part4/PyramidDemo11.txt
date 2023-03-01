@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main() {
+	int rows, index, temp, patternCount = 1;
+	printf("Enter number of rows : ");
+	scanf("%d", &rows);
+	temp = rows;
+	for (index = 0; index < rows; index++) {
+		for (int space = temp - 1; space > 0; space--) {
+			printf(" ");
+		}
+		temp--;
+		for (int pattern = 1; pattern <= patternCount; pattern++) {
+			printf("%d", index);
+		}
+		patternCount = patternCount + 2;
+		printf("\n");
+	}
+}

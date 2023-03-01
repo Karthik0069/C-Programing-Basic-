@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main() {
+	int j, spaceCount, space, rows, rowIndex, k = 1;
+	printf("Enter number of rows : ");
+	scanf("%d", &rows);
+	space = rows;
+	for (int i = 1; i <= rows; i++) {
+		for (spaceCount = space - 1; spaceCount > 0; spaceCount--) {
+			printf(" ");
+		}
+		space--;
+		for (j = 0; j < i; j++) {
+			printf("%d ", k);
+			k++;
+		}
+		printf("\n");
+	}
+}

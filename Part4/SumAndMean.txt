@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main() {
+	int arr[10],i,sum = 0,size;
+	float mean = 0;
+	printf("Enter how many numbers do you want : ");
+	scanf("%d", &size);
+	printf("Enter %d numbers : ", size);
+	for (i = 0; i < size;i++) {
+		scanf("%d", &arr[i]);
+	}
+	for (i = 0 ; i < size ; i++) {
+		sum = sum + arr[i];
+	}
+	mean = ((float)sum / size);
+	printf("Sum = %d\nMean = %f\n", sum, mean);
+}

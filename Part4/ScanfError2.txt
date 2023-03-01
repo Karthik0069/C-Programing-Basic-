@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main() {
+	char gender;
+	int age;
+	float height;
+	printf("Enter values in the format gender, age, height : ");
+	scanf("%c,%d,%f",&gender,&age,&height);
+	printf("The given data is : %c, %d, %f\n", gender, age, height);
+}

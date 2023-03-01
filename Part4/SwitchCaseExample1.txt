@@ -1,0 +1,23 @@
+#include <stdio.h>
+void main() {
+	char ch;
+	printf("Enter a character : ");
+	scanf("%c", &ch);
+	if((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122)) {
+		switch (ch) {
+			case 'A':
+			case 'a':printf("%c is an alphabet and a vowel\n", ch);break;
+			case 'E':
+			case 'e':printf("%c is an alphabet and a vowel\n", ch);break;
+			case 'I':
+			case 'i':printf("%c is an alphabet and a vowel\n", ch);break;
+			case 'O':
+			case 'o':printf("%c is an alphabet and a vowel\n", ch);break;
+			case 'U':
+			case 'u':printf("%c is an alphabet and a vowel\n", ch);break;
+			default:printf("%c is an alphabet and a consonant\n", ch);break;
+		}
+	} else {
+		printf("%c is not an alphabet\n", ch);
+	}
+}

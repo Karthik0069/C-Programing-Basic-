@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+int calcSum(int );
+int main() {
+	int num,result;
+	printf("Enter an integer : ");
+	scanf("%d", &num);
+	result = num;
+	do {
+		if(result >= 10) {
+			result = calcSum(result);
+		}
+	}while (result >= 10);
+}
+int calcSum(int x) {
+	int temp, digit, lsb = 0, sum1;
+	sum1 = 0;
+	temp = x;
+	do {
+		if(temp == 0) {
+			sum1 = sum1 + lsb;
+		} else {
+			digit = temp % 10;
+			sum1 = sum1 + digit;
+			lsb = temp/10;
+			temp = temp/10;
+		}
+	}while (temp != 0);
+	if((sum1 < 10 ) && (sum1 >= 0)) {
+		printf("Result = %d\n", sum1);
+	}
+	return sum1;
+}

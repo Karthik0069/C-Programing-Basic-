@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main() {
+	int a, b, temp;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &a, &b);
+	printf("Before swapping the values in a = %d, b = %d\n", a, b);
+	// Assign value a to temp
+	temp = a;
+	// Assign value b to a
+	a = b;
+	//Assign temp value to b
+	b = temp;
+	///free(&temp);
+	printf("After swapping the values in a = %d, b = %d\n", a, b);
+}
