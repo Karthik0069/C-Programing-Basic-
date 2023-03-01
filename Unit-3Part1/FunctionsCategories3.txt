@@ -1,0 +1,15 @@
+#include <stdio.h>
+void largest(int, int);
+void main() {
+	int a, b;
+	printf("Enter two numbers : ");
+	scanf("%d%d", &a, &b);
+	largest(a,b); // Correct the code
+}
+void largest(int x, int y) { // Correct the code
+	if (x > y) { // Correct the code
+		printf("Largest element = %d\n", x);
+	} else {
+		printf("Largest element = %d\n", y);
+	}
+}

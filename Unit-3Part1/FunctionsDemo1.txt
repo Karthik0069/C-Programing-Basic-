@@ -1,0 +1,13 @@
+#include <stdio.h>
+void ap_capital(void);
+void ts_capital(void);
+void main() {
+	ap_capital();
+	ts_capital();
+}
+void ap_capital(void) {
+	printf("Amaravathi\n");
+}
+void ts_capital(void) {
+	printf("Hyderabad\n");
+}

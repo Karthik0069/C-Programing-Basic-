@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main()
+{
+	char arr[100];
+	int i , n;
+	printf("Enter size of the array : ");
+	scanf("%d", &n);
+	printf("Enter array elements : ");
+	for (i = 0; i < n; i++) {
+		scanf("%s", &arr[i]);
+	}
+	arr[i] = '\n';
+	printf("The given character array elements : ");
+	for (i = 0; i < n; i++) {
+		printf("%c ", arr[i]);
+	}
+	return 0;
+}

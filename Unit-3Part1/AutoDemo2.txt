@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main() {
+	auto int i = 9;
+	{
+		auto int i = 99;
+		{
+			auto int i = 999;
+			printf("Third inner block value = %d\n", i);
+		}
+		printf("Second inner block value = %d\n", i);
+	}
+	printf("First block value = %d\n", i);
+}

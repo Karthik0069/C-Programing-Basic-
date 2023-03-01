@@ -1,0 +1,17 @@
+#include <stdio.h>
+int largest(int, int, int);
+void main() {
+	int a, b, c;
+	printf("Enter three numbers : ");
+	scanf("%d%d%d", &a, &b, &c);
+	printf("Largest of the given three numbers = %d\n", largest(a, b, c)); // Correct the code
+}
+int largest(int x, int y, int z) { // Correct the code
+	if ((x > y) && (x > z)) { // Correct the code
+		return x; // Correct the code
+	} else if (z > y) { // Correct the code
+		return z; // Correct the code
+	} else {
+		return y; // Correct the code
+	}
+}

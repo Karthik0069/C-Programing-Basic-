@@ -1,0 +1,50 @@
+#include <stdio.h>
+void read(int [10][10], int, int); // Complete the declaration part
+void addition_of_two_matrices(int [10][10], int [10][10], int, int); // Complete the declaration part
+void display(int [10][10], int, int); // Complete the declaration part
+void main() {
+	int a[10][10], b[10][10], m, n, p, q;
+	printf("Enter the size of the first matrix : ");
+	scanf("%d%d", &m, &n);
+	read(a, m, n);
+	printf("Enter the size of the second matrix : ");
+	scanf("%d%d", &p, &q);
+	read(b, p, q);
+	printf("The first matrix is\n");
+	display(a, m, n);
+	printf("The second matrix is\n");
+	display(b, p, q);
+	if ((m == p) && (n == q)) { // Write the condition
+		addition_of_two_matrices(a, b, m, n);
+	} else {
+		printf("Addition is not possible\n");
+	}
+}
+void read(int x[10][10], int m, int n) {
+	int i, j;
+	printf("Enter %d elements : ", m*n);
+	for (i = 0; i < m; i++) { // Complete the code in for
+		for (j = 0; j < n; j++) { // Complete the code in for
+			scanf("%d", &x[i][j]); // Fill the code in scanf() function 
+		}
+	}
+}
+void display(int y[10][10], int p, int q) { // Complete the function definition
+	int i, j;
+	for (i = 0; i < p; i++) { // Complete the code in for
+		for (j = 0; j < q; j++) { // Complete the code in for
+			printf("%d ", y[i][j]);
+		}
+		printf("\n");
+	}
+}
+void addition_of_two_matrices(int a[10][10], int b[10][10], int m, int n) {
+	int i, j, c[10][10];
+	for (i = 0; i < m; i++) { // Complete the code in for
+		for (j = 0; j < n; j++) { // Complete the code in for
+			c[i][j] = a[i][j] + b[i][j]; // Complete the statement
+		}
+	}
+	printf("The Addition Matrix is\n");
+	display(c, m, n);
+}

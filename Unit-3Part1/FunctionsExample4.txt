@@ -1,0 +1,38 @@
+#include <stdio.h>
+float sine(int, float);
+float cosine(int, float);
+void main() {
+	int n;
+	float x;
+	printf("Enter number of terms : ");
+	scanf("%d", &n);
+	printf("Enter number of degrees : ");
+	scanf("%f", &x);
+	x = (x * 3.14) / 180.0; // converting degrees into radians
+	printf("Sine value = %f\n", sine(n, x)); // passing actual arguments to called function.
+	printf("Cosine value = %f\n", cosine(n, x)); // passing actual arguments to called function.
+	printf("Tangent value = %f\n" , (sine(n, x) / cosine(n, x))); // tan = sin/cos;
+}
+float sine(int n, float x) { //getting formal parameters 
+	int i;
+	float sum, term;
+	term = sum = x;
+	for (i = 1; i < n; i++) { // Complete the code in for
+		term = ((-term) * (x * x))/((2 * i) * ((2 * i) + 1)); // Complete the statement
+		sum = sum + term;
+	}
+	return (sum);
+}
+float cosine(int n, float x) {
+	int i;
+	float sum, term;
+	term = sum = 1;
+	for (i = 1; i < n; i++) { // Complete the code in for
+		term = ((-term) * (x * x))/((2 * i) * ((2 * i) - 1)); // Complete the statement
+		sum = sum + term;
+	}
+	return (sum);
+}
+//This program is modifed by kkkkk cse.
+
+

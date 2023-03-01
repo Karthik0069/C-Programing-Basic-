@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "ExternDemo4.h"
+void main() {
+	extern int x;
+	printf("In main() the value of x = %d\n", x);
+	function1();
+}
+
+//Main
+
+int x = 10;
+void function1() {
+	x = x + 25;
+	printf("In function1() the value of x = %d\n", x);
+}

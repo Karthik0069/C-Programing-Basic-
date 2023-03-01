@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main() {
+	int a[10], i, n, count = 0;
+	printf("Enter array size : ");
+	scanf("%d", &n);                                // read a value
+	printf("Enter %d elements : ", n);
+	//Fill the missing code
+	for (i = 0; i < n; i++) {
+		scanf("%d", &a[i]);
+	}
+	printf("The even numbers in the array : ");
+	// Fill the missing code
+	for (i = 0; i < n; i++) {
+		if (a[i] % 2 == 0) {
+			count++;
+		}
+	}
+	if (count == 0) {
+		printf("Nil\n");
+		printf("Total number of even numbers in the array : %d\n", count);
+	} else {
+		for (i = 0; i < n; i++) {
+			if (a[i] % 2 == 0) {
+				printf("%d ", a[i]);
+			}
+		}
+		printf("\n");
+		printf("Total number of even numbers in the array : %d\n", count);
+	}
+	//printf("\nTotal number of even numbers in the array : %d\n", count);
+}
+	

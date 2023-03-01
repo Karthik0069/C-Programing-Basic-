@@ -1,0 +1,8 @@
+#include <stdio.h>
+void india_capital();
+void main() {
+	india_capital();
+}
+void india_capital() {
+	printf("New Delhi is the capital of India\n");
+}

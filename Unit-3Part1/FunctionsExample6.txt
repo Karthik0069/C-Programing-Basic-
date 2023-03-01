@@ -1,0 +1,25 @@
+void decimalToBinary(int);//declaration.
+void decimalToBinary(int n) { //definition.
+	int arr[20],i = 0, rem;
+	while(n != 0) {
+		rem = n % 2;
+		arr[i] = rem;
+		n /= 2;
+		i++;
+	}
+	for (int j = (i - 1); j >= 0; j--) {
+		printf("%d", arr[j]);
+	}
+}
+
+//Function calling.
+#include <stdio.h>
+#include "FunctionsExample6a.c"
+void main() {
+	int d;
+	printf("Enter a positive decimal number : ");
+	scanf("%d", &d);
+	printf("The binary number of decimal %d is : ", d);
+	decimalToBinary(d);
+	printf("\n");
+}

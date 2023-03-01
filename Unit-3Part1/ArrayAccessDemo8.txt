@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main() {
+	int size, i, mid;
+	printf("Enter size : ");
+	scanf("%d", &size);
+	int arr[size];
+	printf("Enter elements : ");
+	for(i = 0; i < size; i++) {
+		scanf("%d", &arr[i]);
+	}
+	mid = size / 2;
+	if(size % 2 == 0) {
+		printf("Middle element(s) : %d %d\n", arr[mid - 1], arr[mid]);
+	} else {
+		printf("Middle element(s) : %d\n", arr[mid]);
+	}
+}

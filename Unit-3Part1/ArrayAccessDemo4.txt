@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() {
+	int arr[10], i, n, value;
+	printf("Enter size of the array : ");
+	// read the input value
+	scanf("%d", &n);
+	printf("Enter array elements : ");
+	// fill the missing code
+	for (i = 0; i < n; i++) {
+		scanf("%d", &arr[i]);
+	}
+	printf("Enter an integer value : ");
+	// read the input value
+	scanf("%d", &value);
+	// fill the missing code
+	if (value == arr[0] || value == arr[n - 1]) {
+		printf("true\n");
+	} else {
+		printf("false\n");
+	}
+}	

@@ -1,0 +1,25 @@
+#include <stdio.h>
+void main() {
+	int size, i, j;
+	printf("Enter array size : ");
+	scanf("%d", &size);
+	int arr[size];
+	printf("Enter %d array elements : ", size);
+	for (i = 0; i < size; i++) {
+		scanf("%d", &arr[i]);
+	}
+	for (i = 0; i < size; i++) {
+		for (j = i + 1; j < size; j++) {
+			if (arr[i] == arr[j]) {
+				arr[j] = 9999;
+			}
+		}
+	}
+	printf("After eliminating duplicates, the array is : ");
+	for(i = 0; i < size; i++) {
+		if (arr[i] != 9999) {
+			printf("%d ", arr[i]);
+		}
+	}
+	printf("\n");
+}

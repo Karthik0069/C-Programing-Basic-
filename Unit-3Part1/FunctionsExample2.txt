@@ -1,0 +1,22 @@
+#include <stdio.h>
+int prime(int);
+void main() {
+	int number;
+	printf("Enter a number : ");
+	scanf("%d", &number); // Complete the statement
+	if (prime(number) == 0) { // Correct the code
+		printf("The given number %d is a prime number\n", number); // Complete the statement
+	} else {
+		printf("The given number %d is not a prime number\n", number); // Complete the statement
+	}
+}
+int prime(int x) { //Fill the missing code
+	int i, count = 0;
+	for (i = 2; i < x; i++) { // Complete the code in for
+		if (x % i == 0) { // Write the condition in if
+			count++;
+			break;
+		}
+	}
+	return count; // Complete the code in return
+}

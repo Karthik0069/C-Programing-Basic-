@@ -1,0 +1,43 @@
+#include <stdio.h>
+void read(int [5][5], int, int);
+void display(int [5][5], int, int);
+void largest_of_each_row(int [5][5], int, int);
+void main() {
+	int arr[5][5], i, j, m, n, largest;
+	printf("Enter row and column sizes : ");
+	scanf("%d %d", &m, &n);
+	read(arr, m, n);
+	printf("The given matrix is\n");
+	display(arr, m, n);
+	largest_of_each_row(arr, m, n);
+}
+void read(int arr[5][5], int m, int n) { 
+	int i, j;
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			printf("Enter the value of arr[%d][%d] : ", i, j);
+			scanf("%d", &arr[i][j]);
+		}
+	}
+}
+void display(int arr[5][5], int m, int n) { 
+	int i, j;
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+}
+void largest_of_each_row(int arr[5][5], int m, int n) { 
+	int i, j, max;
+	for (i = 0; i < m; i++) {
+		max = arr[i][0];
+		for (j = 1; j < n; j++) {
+			if (max <= arr[i][j]) {
+				max = arr[i][j];
+			}
+		}
+		printf("Largest of row - %d elements = %d\n", i, max);
+	}
+}

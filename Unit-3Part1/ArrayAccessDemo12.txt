@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main() {
+	int arr[5][5], i, j, rows, cols, largest, smallest;
+	printf("Enter row and column sizes : ");
+	scanf("%d %d", &rows, &cols);
+	for (i = 0; i < rows; i++) { //Complete the code in for
+		for (j = 0; j < cols; j++) { //Complete the code in for
+			printf("Enter the value of arr[%d][%d] : ", i, j);
+			scanf("%d", &arr[i][j]); // Complete the statement
+		}
+	}
+	printf("The given matrix is\n");
+	for (i = 0; i < rows; i++) { //Complete the code in for
+		for (j = 0; j < cols; j++) { //Complete the code in for
+			printf("%d ", arr[i][j]); // Complete the statement
+		}
+		printf("\n");
+	}
+	for (i = 0; i < rows; i++) { //Complete the code in for
+		largest = arr[i][0]; // Complete the statement
+		smallest = arr[i][0]; // Complete the statement
+		for (j = 1; j < cols; j++) { //Complete the code in for
+			if (arr[i][j] >= largest) { // Complete the condition part
+				largest = arr[i][j]; // Complete the statement
+			}
+			if (arr[i][j] <= smallest) { // Complete the condition part
+				smallest = arr[i][j]; // Complete the statement
+			}
+		}
+		printf("Largest element in row - %d = %d\n", i, largest);
+		printf("Smallest element in row - %d = %d\n", i, smallest);
+	}
+}

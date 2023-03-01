@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <math.h>
+float exponential(int, float);
+int factorial(int);
+int findPower(int, int);
+void main() {
+	int op, n;
+	float x, result;
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	printf("Enter x value : ");
+	scanf("%f", &x);
+	x = (x * 3.14) / 180;
+	result = exponential(n, x);
+	printf("Exponential result of given value %f = %f\n",x,result); // Complete the statement
+}
+float exponential(int n, float x) { // Complete the statement
+	int i;
+	float sum, term;
+	term = sum = 1;
+	for (i = 1; i <= n; i++) { // Complete the code in for
+		term = (float)pow(x,i)/(float)factorial(i); // Complete the statement
+		sum += term; // Complete the statement
+	}
+	return sum;
+}
+int factorial(int n) {
+	int i, fact = 1;
+	for (i = 1; i <= n; i++) { // Complete the code in for
+		fact = fact * i; // Complete the statement
+	}
+	return fact;
+}
+/*int findPower(int a, int i) {
+	int sum = 1, j;
+	for (j = 0; j < i; j++) {
+		sum = sum * a;
+	}
+	return sum;
+}*/
+
+
+

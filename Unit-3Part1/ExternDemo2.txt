@@ -1,0 +1,17 @@
+#include <stdio.h>
+void function1();
+int x;
+void main() {
+	
+	int y = 4;
+	x = 5;
+	printf("In main() function value of x = %d\n", x);
+	function1();
+	printf("In main() function after execution of function1(), the value of x = %d\n", x);
+	y = y + x;
+	printf("In main() function value of y = %d\n", y);
+}
+void function1() {
+	x = 5;
+	x = x + 10;
+}

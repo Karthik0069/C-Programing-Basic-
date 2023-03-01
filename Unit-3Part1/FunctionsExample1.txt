@@ -1,0 +1,15 @@
+#include <stdio.h>
+int factorial(int);
+void main() {
+	int number;
+	printf("Enter a number : ");
+	scanf("%d", &number);
+	printf("Factorial of a given number %d = %d\n", number, factorial(number)); // Correct the statement
+}
+int factorial(int n) {
+	int i, fact = 1; // Do the initialization
+	for (i = 1; i <= n; i++) { // Complete the code in for
+		fact *= i; // Correct the statement
+	}
+	return fact; // Complete the code in return
+}

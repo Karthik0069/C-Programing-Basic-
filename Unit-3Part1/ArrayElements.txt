@@ -1,0 +1,28 @@
+#include <stdio.h>
+void main() {
+	int arr[20], number, sum = 0, min = 0, max = 0;
+	printf("Enter size of the array : ");
+	scanf("%d", &number);
+	printf("Enter array elements : ", number);
+	for (int i = 0; i < number; i++) {
+		scanf("%d", &arr[i]);	
+	}
+	min = 999;
+	float avg;
+	/* Write your logic here to find the maximum, minimum and average in the given integer array*/
+	for (int j = 0; j < number; j++)
+	{
+		if (arr[j] >= max)
+		{
+			max = arr[j];
+		}
+		if (arr[j] <= min)
+		{
+			min = arr[j];
+		}
+		sum = sum + arr[j];
+	}
+	avg = (float)sum/(float)number;
+	
+	printf("The minimum, maximum and average in an array of integers : %d %d %0.2f\n", min, max, avg);
+}
