@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main() {
+	int size, flarg, slarg;
+	printf("Enter how many values you want to read : ");
+	scanf("%d", &size);
+	int arr[size];
+	for (int i = 0; i < size; i++) {
+		printf("Enter the value of a[%d] : ", i);
+		scanf("%d", &arr[i]);
+	}
+	flarg = slarg = arr[0];
+	for (int j = 1; j < size; j++) {
+		if (arr[j] > flarg) {
+			slarg = flarg;
+			flarg = arr[j];
+		} else if (arr[j] > slarg || slarg == flarg) {
+			slarg = arr[j];
+		}
+	}
+	printf("The largest element of the array = %d\n", flarg);
+	printf("The second largest element of the array = %d\n", slarg);
+}

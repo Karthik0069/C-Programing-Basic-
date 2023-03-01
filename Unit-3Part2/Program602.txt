@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main() {
+	int i;
+	char str[20];
+	printf("enter string : ");
+	scanf("%s", str);
+	printf("given string : %s\n", str);
+	for (i = 0; str[i] != '\0'; i++) {
+		if ((str[i] >= 65) && (str[i] <= 90)) {
+			str[i] = (char)((int)str[i] + 32);
+		}
+	}
+	printf("lower case : %s\n", str);
+}

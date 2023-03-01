@@ -1,0 +1,26 @@
+int fibonacci(int );
+int fibonacci(int n)
+{
+	int a, b, c, i;
+	a = 0;
+	b = 1;
+	for (i = 0; i < n; i++) {
+		c = a + b;
+		b = a;
+		a = c;
+	}
+	return c;
+}
+
+//Function Calling
+#include <stdio.h>
+#include "FunctionsExample7a.c"
+void main() {
+	int number;
+	printf("Enter a number : ");
+	scanf("%d", &number);
+	if (number < 0)
+		printf("Invalid input\n");
+	else
+		printf("The %d fibonacci number : %d\n", number, fibonacci(number));
+}

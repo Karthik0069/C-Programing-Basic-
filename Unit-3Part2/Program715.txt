@@ -1,0 +1,68 @@
+void read(int [], int);
+void bubbleSort(int [], int);
+void display(int [], int);
+int binarySearch(int [], int, int);
+void read(int a[], int n) {
+	int i;
+	for (i = 0; i < n; i++) {
+		printf("Enter element for a[%d] : ", i);
+		scanf("%d", &a[i]);
+	}
+}
+void bubbleSort(int a[], int n) {
+	int i, j, k = n, temp;
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < k - 1; j++) {
+			if (a[j] > a[j + 1]) {
+				temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+		k--;
+	}
+}
+void display(int a[], int n) {
+	int i;
+	for (i = 0; i < n; i++) {
+		printf("Value of a[%d] = %d\n", i, a[i]);
+	}
+}
+int binarySearch(int a[], int n, int key) {
+	int mid, start = 0, end = n;
+	for (int i = 0; i < n; i++) {
+		mid = (start + end)/2;
+		if (key == a[mid]) {
+			return mid;
+		}
+		else if (key < a[mid]) {
+			end = mid;
+		}
+		else if (key > a[mid]) {
+			start = mid;
+		}
+	}
+	return -1;
+}
+
+//Calling the Function
+
+#include <stdio.h>
+#include "Program715a.c"
+void main() {
+	int a[20], n, key, flag;
+	printf("Enter value of n : ");
+	scanf("%d", &n);
+	read(a, n);
+	bubbleSort(a, n);
+	printf("After sorting the elements are\n");
+	display(a, n);
+	printf("Enter key element : ");
+	scanf("%d", &key);
+	flag = binarySearch(a, n, key);
+	if (flag == -1) {
+		printf("The given key element %d is not found\n", key);
+	} else {
+		printf("The given key element %d is found at position : %d\n", key, flag);
+	}
+}

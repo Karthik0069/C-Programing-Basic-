@@ -1,0 +1,37 @@
+void read(int [], int);
+int linearSearch(int [], int, int);
+void read(int a[], int n) {
+	int i;
+	printf("Enter %d elements : ", n);
+	for (i = 0; i < n; i++) {
+		scanf("%d", &a[i]);
+	}
+}
+int linearSearch(int a[], int n, int key) {
+	int i;
+	for (i = 0; i < n; i++) {
+		if (key == a[i]) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+//Calling the Functions
+
+#include <stdio.h>
+#include "Program718a.c"
+void main() {
+	int a[20], n, pos, key;
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	read(a, n);
+	printf("Enter a key element : ");
+	scanf("%d", &key);
+	pos = linearSearch(a, n, key);
+	if (pos == -1) {
+		printf("The key element %d is not found\n", key);
+	} else {
+		printf("The key element %d is found at position : %d\n", key, pos);
+	}
+}

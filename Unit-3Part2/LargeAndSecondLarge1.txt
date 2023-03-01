@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main() {
+	int a[10], i, n, large, second_large;
+	printf("Enter how many values you want to read : ");
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		printf("Enter the value of a[%d] : ", i);
+		scanf("%d", &a[i]);
+	}
+	large = a[0];
+	second_large = a[0];
+	for (i = 1; i < n; i++) {
+		if (a[i] > large) {
+			second_large = large;
+			large = a[i];
+		}else if (a[i] > second_large || second_large == large) {
+			second_large = a[i];
+		}
+	}
+	printf("The largest element of the array = %d\n", large);
+	printf("The second largest element of the array = %d\n", second_large);
+}

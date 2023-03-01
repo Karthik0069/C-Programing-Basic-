@@ -1,0 +1,47 @@
+#include <math.h>
+int fact(int );
+float sine(int ,float);
+float cosine(int, float);
+int fact(int n) {
+	int factorial = 1, i;
+	for (i = 1; i <= n; i++) {
+		factorial *= i;
+	}
+	return factorial;
+}
+float sine(int n, float x) {
+	int power = 1, k = 2, i = -1;
+	float sum = 0;
+	for (int j = 0; j < n; j++) {
+		sum += ((float)(pow(i,k))) * (((float)(pow(x,power)))/((float)(fact(power))));
+		power += 2;
+		k++;
+	}
+	return sum;
+}
+float cosine(int n, float x) {
+	int power = 2, k =  1, i = -1;
+	float sum = 1;
+	for (int j = 0; j < n; j++) {
+		sum += ((float)(pow(i,k))) * (((float)(pow(x,power)))/((float)(fact(power))));
+		power += 2;
+		k++;
+	}
+}
+
+//Calling the Function
+
+#include <stdio.h>
+#include "Program706a.c"
+void main() {
+	int op, n;
+	float x;
+	printf("Enter number of terms : ");
+	scanf("%d", &n);
+	printf("Enter number of degrees : ");
+	scanf("%f", &x);
+	x = (x * 3.14) / 180;
+	printf("Sine value = %f\n", sine(n, x));
+	printf("Cosine value = %f\n", cosine(n, x));
+	printf("Tangent value = %f\n" , sine(n, x) / cosine(n, x));
+}

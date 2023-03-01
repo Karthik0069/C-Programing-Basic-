@@ -1,0 +1,21 @@
+long int product(int , int );
+long int product(int a, int b) {
+	if (a < b) {
+		return product(b, a);
+	} else if (b == 0) {
+		return 0;
+	} else {
+		return a + product(a, b - 1);
+	}
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program902a.c"
+void main() {
+	int m, n;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &m, &n);
+	printf("Product of %d and %d is : %d\n", m, n, product(m, n));
+}

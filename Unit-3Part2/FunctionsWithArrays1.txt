@@ -1,0 +1,24 @@
+#include <stdio.h>
+void read(int [], int);
+void display(int [], int);
+void main() {
+	int a[10], n;
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	read(a, n);
+	display(a, n);
+}
+void read(int x[10], int n) {
+	int j;
+	printf("Enter %d elements : ", n);
+	for (j = 0; j < n; j++) {
+		scanf("%d", &x[j]);
+	}
+}
+void display(int y[10], int n) {
+	int j;
+	printf("Elements in the array are : ");
+	for (j = 0; j < n; j++) {
+		printf("%d ", y[j]);
+	}
+}

@@ -1,0 +1,13 @@
+int sum(int a, int b) {
+	return a + b;
+}
+
+//Calling the Function
+#include <stdio.h>
+#include "HeaderDemo.h"
+void main() {
+	int a, b;
+	printf("Enter two numbers : ");
+	scanf("%d%d", &a, &b);
+	printf("The sum of given two numbers = %d\n", sum(a, b));
+}

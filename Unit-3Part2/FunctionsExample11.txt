@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int reverse(int);
+void main() {
+	int lower, upper, i;
+	printf("Enter lower limit and upper limit : ");
+	scanf("%d %d", &lower, &upper);
+	printf("The palindrome numbers between %d and %d\n", lower, upper);
+	for (i = lower; i <= upper; i++) { // Complete the code in for
+		if (reverse(i) == i) { // Write the condition
+			printf("%d ", i);
+		}
+	}
+}
+int reverse(int n) {
+	int rem, rev =0, temp, count = -1;
+	temp = n;
+	while (temp != 0) {
+		count++;
+		temp /= 10;
+	}
+	while (n != 0) { // Write the condition
+		rem = n % 10; // Complete the statement
+		rev = rev + (int)(pow(10, count) * rem); // Complete the statement
+		count--;
+		n = n / 10; // Complete the statement
+	}
+	return rev; // Complete the statement
+}

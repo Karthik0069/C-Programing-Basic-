@@ -1,0 +1,27 @@
+//this program is developed by kkkkk559
+#include <stdio.h>
+#include <string.h>
+main() {
+	char str[20];
+	int i = 0, pos = 0, limit = 0;
+	printf("String: ");
+	gets(str);
+	printf("Position: ");
+	scanf("%d", &pos);
+	printf("No of characters you want to delete: ");
+	scanf("%d", &limit);
+	for (i = pos; i < (limit + pos); i++) {
+		str[i] = '$';
+	}
+	if ((pos >= 0) && (limit <= strlen(str))) {
+		printf("After deletion : ");
+		for (i = 0; str[i] != '\0'; i++) {
+			if (str[i] != '$') {
+				printf("%c", str[i]);
+			}
+		}
+		printf("\n");
+	}
+	else 
+		printf("Deletion is not performed\n");
+}

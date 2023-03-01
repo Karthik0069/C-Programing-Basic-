@@ -1,0 +1,27 @@
+//This program is implimented by kkkkk0069
+#include <stdio.h>
+#include <string.h>
+main() {
+	char str[100], newStr[100];
+	int i, x, mid = 0, flag = 0;
+	printf("String: ");
+	gets(str);
+	x = strlen(str);
+	for (i = (x - 1); i >= 0; i--) {
+		newStr[mid] = str[i];
+		mid++;
+	}
+	newStr[mid] = '\0';
+	if (strcmp(str, newStr) == 0) {
+		flag = 0;
+	}
+	else {
+		flag = 1;
+	}
+	if(flag == 1) {
+		printf("Not a palindrome\n");
+	}
+	else {
+		printf("Palindrome\n");
+	}
+}

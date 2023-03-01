@@ -1,0 +1,15 @@
+#include <stdio.h>
+int x = 15;
+void change1(int x) {
+	printf("In change1() function x = %d\n", x);
+}
+void change2() {
+	printf("In change2() function x = %d\n", x);
+}
+void main() {
+	int x = 10;
+	printf("In main() function x = %d\n", x);
+	change1(x);
+	change2();
+	printf("In main() function x = %d\n", x);
+}

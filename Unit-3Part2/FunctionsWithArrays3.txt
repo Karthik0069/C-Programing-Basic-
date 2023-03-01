@@ -1,0 +1,28 @@
+#include <stdio.h>
+void givenArr(int [], int);
+void alterArr(int [], int);
+main() {
+	int size, i, arr[10];
+	printf("Enter size of the array : ");
+	scanf("%d", &size);
+	printf("Enter %d elements : ", size);
+	for (i = 0; i < size; i++) {
+		scanf("%d", &arr[i]);
+	}
+	givenArr(arr, size);
+	alterArr(arr, size);
+}
+void givenArr(int x[10], int size) {
+	printf("The given elements : ");
+	for (int i = 0; i < size; i++) {
+		printf("%d ", x[i]);
+	}
+	printf("\n");
+}
+void alterArr(int y[10], int size) {
+	printf("The alternative elements : ");
+	for (int i = 0; i < size; i = i + 2) {
+		printf("%d ", y[i]);
+	}
+	printf("\n");
+}

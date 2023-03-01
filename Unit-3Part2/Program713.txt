@@ -1,0 +1,25 @@
+int large(int [], int);
+int large(int a[], int n) {
+	int max = -999;
+	for (int i = 0; i < n; i++) {
+		if (a[i] > max) {
+			max = a[i];
+		}
+	}
+	return max;
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program713a.c"
+void main() {
+	int a[10], i, n;
+	printf("Enter how many values you want to read : ");
+	scanf("%d", &n);
+	for (i = 0; i < n; i++) {
+		printf("Enter the value of a[%d] : ", i);
+		scanf("%d", &a[i]);
+	}
+	printf("The largest element of the array = %d\n", large(a, n));
+}

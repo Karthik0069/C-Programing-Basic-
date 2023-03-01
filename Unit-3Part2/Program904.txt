@@ -1,0 +1,19 @@
+long int sumOfDigits(int );
+long int sumOfDigits(int a) {
+	if (a == 0) {
+		return 0;
+	} else {
+		return (a)? a % 10 + sumOfDigits(a / 10) : 0;
+	}
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program904a.c"
+void main() {
+	int n;
+	printf("Enter an integer value : ");
+	scanf("%d", &n);
+	printf("Sum of digits of given number %d = %d\n", n, sumOfDigits(n));
+}

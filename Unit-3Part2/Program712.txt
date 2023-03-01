@@ -1,0 +1,34 @@
+#include <math.h>
+int fact(int);
+int fact(int x) {
+	int factorial = 1;
+	for (int i = 1; i <= x; i++) {
+		factorial *= i;
+	}
+	return factorial;
+}
+float exponential(int, float);
+float exponential(int n, float x) {
+	int power = 1, i;
+	float sum = 1;
+	for (i = 0; i < n; i++) {
+		sum += ((float)(pow(x,power)))/((float)(fact(power)));
+		power++;
+	}
+	return sum;
+}
+
+//Calling the function
+
+#include <stdio.h>
+#include "Program712a.c"
+void main() {
+	int op, n;
+	float x;
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	printf("Enter x value : ");
+	scanf("%f", &x);
+	x = (x * 3.14) / 180;
+	printf("Exponential result = %f\n", exponential(n, x));
+}

@@ -1,0 +1,30 @@
+int prime(int);
+int prime(int num) {
+	int flag = 0, i;
+	for (i = 2; i < num; i++) {
+		if (num % i == 0) {
+			flag = 1;break;
+		}
+	}
+	if (flag == 0) {
+		return 0;
+	}
+	else {
+		return 1;
+	}
+}
+
+//Exicution starts from main..
+
+#include <stdio.h>
+#include "Program705a.c"
+void main() {
+	int number;
+	printf("Enter a number : ");
+	scanf("%d", &number);
+	if (prime(number) == 0) {
+		printf("The given number %d is a prime number\n", number);
+	} else {
+		printf("The given number %d is not a prime number\n", number);
+	}
+}

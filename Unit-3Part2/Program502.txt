@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void main() {
+	int row, col, i, j, rowSum;
+	printf("Enter row and column sizes : ");
+	scanf("%d%d", &row, &col);
+	int arr[row][col];
+	printf("Enter %d elements of matrix : ", (row * col));
+	for (i = 0; i < row; i++) {
+		for (j = 0; j < col; j++) {
+			scanf("%d", &arr[i][j]);
+		}
+	}
+	printf("The given matrix is\n");
+	for (i = 0; i < row; i++) {
+		for (j = 0; j < col; j++) {
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+	for (i = 0; i < row; i++) {
+		rowSum = 0;
+		for (j = 0; j < col; j++) {
+			rowSum += arr[i][j];
+		}
+		printf("Sum of row - %d elements = %d\n", i, rowSum);
+	}
+}

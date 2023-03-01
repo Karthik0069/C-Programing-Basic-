@@ -1,0 +1,11 @@
+#include <stdio.h>
+void test();
+void main() {
+	int a = 9, b = 99;
+	test();
+	printf("Values in main() function a = %d and b = %d\n", a, b);
+}
+void test() {
+	int a = 5, b = 55;
+	printf("Values in test() function a = %d and b = %d\n", a, b);
+}

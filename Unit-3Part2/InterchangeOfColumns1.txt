@@ -1,0 +1,40 @@
+#include<stdio.h>
+void main() {
+	int i, j, m, n, c1, c2, temp;
+	int a[5][5];
+	printf("Enter the row & column sizes of matrix : ");
+	scanf("%d %d", &m, &n);
+	printf("Enter %d elements : ", m*n);
+	for (i = 0; i < m; i++) { //Write the code in for
+		for (j = 0; j < n; j++) { //Write the code in for
+			scanf("%d", &a[i][j]);
+		}
+	}
+	printf("The given matrix is\n");
+	// Write the code to display the given matrix
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			printf("%d ", a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("Enter column numbers to be interchange : ");
+	scanf("%d %d", &c1, &c2);
+	if ((c1 <= n) && (c2 <= n)) { // Write the condition part
+		for (i = 0; i < n; i++) { //Write the code in for
+			temp = a[i][c1]; // Complete the statement
+			a[i][c1] = a[i][c2]; // Complete the statement
+			a[i][c2] = temp; // Complete the statement
+		}
+		printf("After interchange the matrix is\n");
+		// Write the code to display the matrix after interchange
+		for (i = 0; i < m; i++) {
+			for (j = 0; j < n; j++) {
+				printf("%d ", a[i][j]);
+			}
+			printf("\n");
+		}
+	} else {
+		printf("Interchange of columns are not possible\n");
+	}
+}

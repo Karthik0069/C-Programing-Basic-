@@ -1,0 +1,35 @@
+#include <math.h>
+int reverse(int);
+int reverse(int n) {
+	//count the number of digits
+	int digit, sum = 0, temp, count = -1;
+	temp = n;
+	while (temp != 0) {
+		count++;
+		temp = temp / 10;
+	}
+	temp = n;
+	while (temp != 0) {
+		digit = temp % 10;
+		sum = sum + (digit * (int)(pow(10,count)));
+		temp = temp / 10;
+		count--;
+	}
+	return sum;
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program711a.c"
+void main() {
+	int lower, upper, i;
+	printf("Enter lower limit and upper limit : ");
+	scanf("%d %d", &lower, &upper);
+	printf("The palindrome numbers between %d and %d\n", lower, upper);
+	for (i = lower; i <= upper; i++) {
+		if (i == reverse(i)) {
+			printf("%d ", i);
+		}
+	}
+}

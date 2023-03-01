@@ -1,0 +1,46 @@
+void read(int [], int);
+void display(int [], int);
+void bubbleSort(int[], int);
+void read(int a[], int n) {
+	int i;
+	printf("Enter %d elements : ", n);
+	for (i = 0; i < n; i++) {
+		scanf("%d", &a[i]);
+	}
+}
+void display(int a[], int n) {
+	int i;
+	for (i = 0; i < n; i++) {
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+}
+void bubbleSort(int a[], int n) {
+	int i, j, k = n, temp;
+	for (i = 0; i < n; i++) {
+		for (j = 0; j < k - 1; j++) {
+			if (a[j] < a[j + 1]) {
+				temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+		k--;
+	}
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program714a.c"
+void main() {
+	int a[20], n, i;
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	read(a, n);
+	printf("Elements before sorting : ");
+	display(a, n);
+	bubbleSort(a, n);
+	printf("Elements after sorting : ");
+	display(a, n);
+}

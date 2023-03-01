@@ -1,0 +1,22 @@
+#include <stdio.h>
+void read(int [], int);
+void display(int [], int);
+void main() {
+	int a[10], n;
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	read(a, n); // Write the arguments in the function call
+	display(a, n); // Write the arguments in the function call
+}
+void read(int x[10], int n) { // Write the arguments in the function definition
+	printf("Enter %d elements : ", n);
+	for (int i = 0; i < n; i++) { // Complete the code in for
+		scanf("%d", &x[i]); // Complete the statement
+	}
+}
+void display(int y[10], int n) { // Write the arguments in the function definition
+	printf("Elements in the array are : ");
+	for (int i = 0; i < n; i++) { // Complete the code in for
+		printf("%d ", y[i]); // Complete the statement
+	}
+}

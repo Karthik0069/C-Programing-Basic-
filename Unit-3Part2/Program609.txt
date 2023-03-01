@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+	char str[100];
+	int i, size = 0;
+	printf("Enter a string : ");
+	scanf("%s", str);
+	for(i = 0; str[i] != '\0'; i++) {
+		size++;
+	}
+	size--;
+	printf("Reverse string : ");
+	for(i = 0; str[i] != '\0'; i++) {
+		printf("%c", str[size]);
+		size--;
+	}
+	printf("\n");
+}

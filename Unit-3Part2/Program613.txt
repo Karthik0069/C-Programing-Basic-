@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+void main() {
+	char str[100], subStr[100], newStr[100];
+	int i, x, pos, k = 0;
+	printf("Main string: ");
+	gets(str);
+	x = strlen(str);
+	printf("Sub string: ");
+	gets(subStr);
+	printf("Position: ");
+	scanf("%d", &pos);
+	for (i = pos; i < x; i++) {
+		newStr[k] = str[i];
+		k++;
+	}
+	str[pos] = '\0';
+	newStr[k] = '\0';
+	strcat(str, subStr);
+	strcat(str, newStr);
+	printf("After insertion the main string: %s\n", str);
+}

@@ -1,0 +1,19 @@
+int sum(int );
+int sum(int a) {
+	if (a == 1) {
+		return 1;
+	} else {
+		return a + sum(a - 1);
+	}
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program903a.c"
+void main() {
+	int n;
+	printf("Enter value of n : ");
+	scanf("%d", &n);
+	printf("Sum of %d natural numbers = %d\n", n, sum(n));
+}
