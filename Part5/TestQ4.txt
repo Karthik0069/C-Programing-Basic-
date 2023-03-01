@@ -1,0 +1,9 @@
+//File Name: Program2.c
+//==================================
+#include <stdio.h>
+void main() {
+	unsigned int num1, num2;
+	printf("Enter two negative integer values : "); // Do not change this statement
+	scanf("%d %d", &num1, &num2); // Do not change this statement
+	printf("Sum of given two values %d and %d = %d\n", num1, num2, num1+num2); // Fill in the missing code
+}

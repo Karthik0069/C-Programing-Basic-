@@ -1,0 +1,15 @@
+#include <stdio.h>
+void main() {
+	int rows, rowIndex, spacesCount, starsCount;
+	printf("Enter number of rows : ");
+	scanf("%d", &rows);
+	for (rowIndex = 0; rowIndex < rows; rowIndex++) {
+		for (spacesCount = rows; spacesCount > rowIndex; spacesCount--) { // Fill in the code to print spaces
+			printf(" ");
+		}
+		for (starsCount = 0; starsCount <= rowIndex; starsCount++) { // Fill in the code to print stars
+			printf("* ");
+		}
+		printf("\n");
+	}
+}

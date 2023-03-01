@@ -1,0 +1,8 @@
+//File Name: Program4.c
+//==================================
+#include <stdio.h>
+void main()
+{
+	printf("Every executable C program should have a main().\n");
+	return 0;
+}

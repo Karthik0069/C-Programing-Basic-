@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main() {
+	int i = 20, intsum;
+	char ch = 'a';
+	float floatsum;
+	intsum = i + ch;
+	floatsum = i + ch;
+	printf("Integer result = %d, Float result = %f\n", intsum, floatsum);
+}

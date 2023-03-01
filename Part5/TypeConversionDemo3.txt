@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	double x = 18.28;
+	int sum = (int) 18.28 + 5.9; // Convert double value to int type explicitly
+	printf("sum = %d\n", sum);
+}

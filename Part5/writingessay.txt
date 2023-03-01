@@ -1,0 +1,4 @@
+#include <stdio.h>
+void main() {
+	printf("Dennis\tRitchie\nBrian\tKernighan\n");
+}

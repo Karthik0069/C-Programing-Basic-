@@ -1,0 +1,8 @@
+#include <stdio.h>
+void main() {
+	float miles,km;
+	printf("Enter the distance in miles : ");
+	scanf("%f", &miles);
+	km = 1.609 * miles;
+	printf("Distance in kilometers = %f\n", km);
+}

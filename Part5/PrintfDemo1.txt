@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	printf("%2d with lesser field width\n", 9126);
+	printf("%6d with larger field width\n", 9126);
+	printf("%-6d with minus sign\n", 9126);
+}

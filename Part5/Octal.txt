@@ -1,0 +1,7 @@
+#include <stdio.h>
+void main() {
+	int temp1;//temp2,temp3;
+	printf("Enter a decimal integer : ");
+	scanf("%d", &temp1);
+	printf("Octal number : %o\nHexadecimal number : %x\n", temp1,temp1);
+}

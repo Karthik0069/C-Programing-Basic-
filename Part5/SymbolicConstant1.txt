@@ -1,0 +1,7 @@
+#include <stdio.h>
+#define PI 3.14
+#define NAME "CodeTantra"
+void main() {
+	printf("PI = %f\n", PI);
+	printf("NAME = %s\n", NAME);
+}

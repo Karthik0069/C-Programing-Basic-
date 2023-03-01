@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	typedef int codetantra;
+	codetantra number = 10;
+	printf("Given value = %d\n", number);
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main() {
+	int value1;float value2;
+	printf("integer value : ");
+	scanf("%d", &value1);
+	printf("float value : ");
+	scanf("%f", &value2);
+	float add,mul,divs;
+	add = value1 + value2;
+	mul = 2.0 * value2;
+	divs = value1 / 5.0;
+	printf("addition : %f\nmultiplication : %f\ndivision: %f\n",add,mul,divs);
+}

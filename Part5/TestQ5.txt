@@ -1,0 +1,12 @@
+//File Name: Program6.c
+//==================================
+#include <stdio.h>
+#define PI 3.14
+void main() {
+	float radius, area; // Assign the data type
+	printf("Enter the radius : "); // Do not change this statement
+	scanf("%f", &radius); // Do not change this statement
+	area = PI*radius*radius;// Write the formula
+	printf("Area of circle with radius %f = %f\n", radius,area); // Fill the missing variable
+}
+

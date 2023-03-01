@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main() {
+	int i = 0, n;
+	printf("Enter an integer : ");
+	scanf("%d", &n); //Fill the missing code in scanf() function
+	while (i < n) { // complete the condition here 
+		printf("Ganga\n"); // Write the text to be printed here
+		i =i + 1; // Complete the statement
+	}
+}
+ 

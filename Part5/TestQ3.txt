@@ -1,0 +1,9 @@
+//File Name: Program3.c
+//==================================
+#include <stdio.h>
+void main() {
+	float num1, num2; // fill the data type
+	printf("Enter two values : "); // Do not change this statement
+	scanf("%f %f", &num1, &num2); // Do not change this statement
+	printf("The result after division of two float values = %f\n",num1/num2); // Fill in the missing code
+}

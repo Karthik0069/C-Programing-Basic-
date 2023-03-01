@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main() {
+	int n, i, sum = 0;
+	printf("Enter a value : ");
+	scanf("%d", &n);
+	for (i = 1; i < n; i++) { //Write the initialization, condition and increment part
+		if (n % i == 0) { // Fill the condition
+			sum = sum + i;
+		}
+	}
+	if (n == sum) { // Fill the condition
+		printf("The given number %d is a perfect number\n", n);
+	} else if (n > sum) { // Fill the condition
+		printf("The given number %d is a deficient number\n", n);
+	} else {
+		printf("The given number %d is an abundant number\n", n);
+	}
+}

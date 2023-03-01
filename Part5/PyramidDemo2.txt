@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() {
+	int rows, rowIndex, spacesCount, starIndex;
+	printf("Enter number of rows : ");
+	scanf("%d", &rows);
+	for (rowIndex = 0; rowIndex < rows; rowIndex++) {
+		// Fill the below code to print spaces
+		for (spacesCount = 0; spacesCount < rows - rowIndex; spacesCount++) {
+			printf(" ");
+		}
+		// Fill the below code to print stars and character A in between stars
+		for (starIndex = 0; starIndex <= rowIndex; starIndex++) {
+			if (starIndex + 1 <= rowIndex) {
+				printf("*A");
+			} else {
+				printf("* ");
+			}
+		}
+		printf("\n");
+	}
+}

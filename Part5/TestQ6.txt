@@ -1,0 +1,9 @@
+//File Name: Program4.c
+//==================================
+#include <stdio.h>
+void main() {
+	int num1, num2, num3;
+	printf("Enter three integers : "); //Do not change this statement
+	scanf("%d %d %d", &num1, &num2, & num3); //Do not change this statement
+	(num1<num2&&num1<num3) ? printf("%d is the smallest number\n", num1) : (num2<num1&&num2<num3) ? printf("%d is the smallest number\n",num2): printf("%d is the smallest number\n", num3);
+}

@@ -1,0 +1,15 @@
+//File Name: Program1.c
+//==================================
+#include <stdio.h>
+void main() {
+	int decimalValue = 112;
+	printf("decimal value = %d\n", decimalValue);  // use the correct formating char to print the decimal integer value
+	int binaryValue = 0b101011; //this should be correctly represented as a binary
+	printf("binary value = %d\n", binaryValue);
+	int octalValue = 0246; //this should be correctly represented as an octal
+	printf("octal value = %d\n", octalValue);
+	int hexValue = 0xA3F2; //this should be correctly represented as hexadecimal
+	printf("hex value = %d\n", hexValue);
+	int asciiValue = 97;
+	printf("ascii char = %c\n", asciiValue); // use the correct formating char after % to print the ascii char
+}

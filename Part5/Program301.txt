@@ -1,0 +1,10 @@
+#include <stdio.h>
+void main() {
+	char ch;
+	int ASCII;
+	printf("enter ch : ");
+	scanf("%c", &ch);
+	//ASCII = (int)ch;
+	printf("ch : %c\n", ch);
+	printf("ASCII value : %d\n", ch);
+}

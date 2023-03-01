@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main() {
+	int n, i = 2, count = 0; // initialize i and count with appropriate values
+	printf("Enter any number : ");
+	scanf("%d", &n);
+	while (i <= (n / 2) ) { // complete the condition to iterate the loop
+		if ((n % i) == 0) { // complete the condition to check the remainder is 0 or not
+			count++;
+		}
+		i++;
+  	}
+  	if (count == 0) { // complete the condition to check the count
+		printf("The given number %d is a prime number\n", n);
+  	} else {
+		printf("The given number %d is not a prime number\n", n);
+	}
+}

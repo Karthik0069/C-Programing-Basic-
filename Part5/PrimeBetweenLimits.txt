@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main() {
+	int lower, upper, num, divisors_count;
+	printf("Enter lower and upper limits : ");
+	scanf("%d %d", &lower, &upper);
+	printf("Prime numbers between %d and %d are : ", lower, upper);
+	do {
+		num = 2;
+		divisors_count = 0;
+		do {
+			if (lower % num == 0) {
+				divisors_count++;
+			}
+			num++;
+		} while (num < (lower / 2));
+		if (divisors_count == 0) {
+			printf(" %d ", lower);
+		}
+		lower++;
+	} while (lower <= upper);
+	printf("\n");
+}

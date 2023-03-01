@@ -1,0 +1,24 @@
+#include <stdio.h>
+void main() {
+	int a, b, c;
+	printf("Enter three integer values : ");
+	scanf("%d %d %d", &a, &b, &c);
+	// Correct the below code
+	if (a > b) {
+		if (b > c) {
+			printf("%d is greater than %d and %d\n", a, b, c);
+		}
+		else {
+			printf("%d is greater than %d and %d\n", c, a, b);
+		}
+	}
+	else 
+	{
+		if((b > a) && (a > c)) {
+			printf("%d is greater than %d and %d\n", b, a, c);
+		}
+		else {
+			printf("%d is greater than %d and %d\n", c, a, b);
+		}
+	}
+}

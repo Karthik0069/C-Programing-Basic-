@@ -1,0 +1,7 @@
+#include <stdio.h>
+void main() {
+	printf("%7.4f\n", 98.7654);
+	printf("%7.2f\n", 98.7654);
+	printf("%10.2e\n", 98.7654);
+	printf("%11.4e\n", -98.7654);
+}

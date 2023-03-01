@@ -1,0 +1,36 @@
+#include <stdio.h>
+void main() {
+	int ch = 65, rows, i, j, temp,space = 1, index;
+	printf("Enter number of rows : ");
+	scanf("%d", &rows);
+	temp = rows - 1;
+	for (i = 0; i < rows; i++) {
+		printf("%c", ch);
+		ch++;
+	}
+	ch = 65 + (rows - 2);
+	for (i = 0; i < rows - 1; i++) {
+		printf("%c", ch);
+		ch--;
+	}
+	printf("\n");
+	ch = 65;
+	for (i = 0; i < rows - 1; i++) {
+		for (index = 0; index < temp; index++) {
+			printf("%c", ch);
+			ch++;
+		}
+		ch--;
+		for (j = 0; j < space; j++) {
+			printf(" ");
+		}
+		for (index = 0; index < temp; index++) {
+			printf("%c", ch);
+			ch--;
+		}
+		ch = 65;
+		temp--;
+		space = space + 2;
+		printf("\n");
+	}
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+#define a 9.8
+void main() {
+	float time, s = 0.0;
+	int floors, height, count;
+	printf("Enter number of the floors : ");
+	scanf("%d", &floors);
+	printf("Enter height of each floor : ");
+	scanf("%d", &height);
+	// Write your code here to read the date for number of floors and height of each floor
+	int temp = 0;
+	for (int i = floors; i >= 0; i--) {
+		temp += height;
+		time = sqrt(0.2040816327 * temp);
+		// Calclate time taken by the ball to reach the floor
+		printf("The time taken by the ball to reach floor - %d: %f\n",i,time); //Fill the code here
+	}
+}

@@ -1,0 +1,33 @@
+#include <stdio.h>
+void main() {
+	// declare and initialize variables here
+	int arr[100], i = 0;
+	int pos = 0,neg = 0, sum = 0;
+	float avg;
+	printf("Enter the values up to zero : ");
+	scanf("%d", &arr[0]);
+	// Write code here
+	while (arr[i] != 0) {
+		i++;
+		scanf("%d", &arr[i]);
+	}
+	for (int j = 0; j <= i; j++) {
+		if(arr[j] < 0) {
+			neg++;
+		} else if (arr[j] > 0) {
+			pos++;
+		} else {
+			break;
+		}
+		sum = sum + arr[j];
+	}
+	if(sum != 0 || i != 0) {
+		avg = (float)sum/(float)i;
+	} else {
+		avg = 0;
+	}
+	printf("Total number of positive values : %d\n", pos);
+	printf("Total number of negative values : %d\n", neg);
+	printf("Sum of given numbers : %d\n", sum);
+	printf("Average of given numbers : %f\n", avg);
+}	

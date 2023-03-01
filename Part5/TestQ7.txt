@@ -1,0 +1,7 @@
+//File Name: Program3.c
+//==================================
+#include<stdio.h>
+void main()
+{
+	printf("Size of int = %d\nSize of short = %hd\nSize of long = %ld\nSize of float = %d\nSize of double = %d\nSize of char = %d\n",sizeof(int),sizeof(short),sizeof(long),sizeof(float),sizeof(double),sizeof(char));
+}

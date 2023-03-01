@@ -1,0 +1,6 @@
+#include<stdio.h>
+void main() {
+	int a = 10; float b = 20.55; char me = 'A';
+	printf("Integer Value = %d\nFloating point Value = %f\nCharacter Value = %c\n",a,b,me);
+	
+}

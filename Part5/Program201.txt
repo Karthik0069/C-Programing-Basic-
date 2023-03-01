@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() 
+{
+	int z=20,e=3,q;
+	q=z+e;
+	printf("Addition Result = %d\n", (q)) ;
+	printf("Subtraction Result = %d\n",(z-e)) ;
+	printf("Multiplication Result = %d\n", (z*e)) ;
+	printf("Division Result = %d\n", (z/e)) ;
+	printf("Remainder = %d\n",(z%e));
+	return 0;
+}
