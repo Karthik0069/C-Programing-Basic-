@@ -1,0 +1,17 @@
+#include <stdio.h>
+void static_example() {
+	static int x;
+	{
+		static int x = 10;
+		printf("%d ", x);
+		x++;
+	}
+	printf("%d\n", x);
+	x++;
+}
+void main() {
+	printf("During the first call the values are = ");
+	static_example();
+	printf("During the second call the values are = ");
+	static_example();
+}

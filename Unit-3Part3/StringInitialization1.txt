@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main() {
+	char name1[15] = {'C', 'o', 'd', 'e', 'T', 'a', 'n', 't', 'r', 'a', '\0'};
+	char name2[3][10] = {"Computers", "Software", "Hardware"};
+	int i;
+	printf("Given one-dimension character array is : %s\n", name1);
+	printf("Given strings are\n");
+	for (i = 0; i < 3; i++) {
+		printf("%s\n", name2[i]);
+	}
+}

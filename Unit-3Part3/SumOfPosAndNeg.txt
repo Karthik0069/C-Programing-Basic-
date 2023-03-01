@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() {
+	int size, i, sumPos = 0, sumNeg = 0;
+	printf("Enter array size : ");
+	scanf("%d", &size);
+	int arr[size];
+	printf("Enter %d elements : ", size);
+	for (i = 0; i < size; i++) {
+		scanf("%d", &arr[i]);
+	}
+	for (i = 0; i < size; i++) {
+		if (arr[i] >= 0) {
+			sumPos += arr[i];
+		}
+		else {
+			sumNeg += arr[i];
+		}
+	}
+	printf("The sum of positive elements = %d\n", sumPos);
+	printf("The sum of negative elements = %d\n", sumNeg);
+}

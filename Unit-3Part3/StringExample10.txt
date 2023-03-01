@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main() {
+	char str[20], ch;
+	int count = 0, i;
+	printf("Enter a string : ");
+	scanf("%s", str);
+	printf("Enter the character to be searched : ");
+	scanf(" %c", &ch);
+	for (i = 0; str[i] != '\0'; i++) { // Complete the code in for
+		if (ch == str[i]) { // Write the condition part
+			count++;
+		}
+	}
+	if (count == 0) { // Write the condition part
+		printf("The character '%c' is not presented in the string %s\n", ch, str);
+	} else {
+		printf("Occurence of character '%c' in the given string %s = %d\n", ch, str, count);
+	}
+}

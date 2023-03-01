@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <string.h>
+void main() {
+	char ch[20];
+	printf("Enter a string : ");
+	scanf("%s", ch);
+	printf("The length of the string %s is %ld\n", ch, strlen(ch)); //Correct the code
+}

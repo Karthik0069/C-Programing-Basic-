@@ -1,0 +1,20 @@
+long int factorial(long int n) {
+	if (n == 0) {
+		return 1;
+	}else 
+	return n * factorial(n - 1);
+}
+long int FindNcr(long int n, long int r) {
+	return (factorial(n)/(factorial(n - r) * factorial(r)));
+}
+
+//Main
+
+#include <stdio.h>
+#include "RecursiveFactorial.c"
+void main() {
+	long int n, r;
+	printf("Enter the value of n and r : ");
+	scanf("%ld%ld", &n, &r);
+	printf("The value of %ldc%ld = %ld\n", n, r, FindNcr(n, r));
+}

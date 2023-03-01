@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main() {
+	char name1[11] = {'C', 'o', 'd', 'e', 'T', 'a', 'n', 't', 'r', 'a'};
+	char name2[3][11] = {"Computers", "Software", "Hardware"}; 
+	int i;
+	printf("Given one-dimension character array is : %s\n", name1); //print name1 without any unexpected characters at the end
+	printf("Given strings are\n");
+	for (i = 0; i < 3; i++) {
+		printf("%s\n", name2[i]);  //Print strings of given size
+	}
+}

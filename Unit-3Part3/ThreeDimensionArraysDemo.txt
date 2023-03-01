@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() {
+	int a[3][3][3], i, j, rows, cols, pages, k;
+	printf("Enter page, row and column sizes : ");
+	scanf("%d %d %d", &pages, &rows, &cols); // Correct the code
+	for (k = 0; k < pages; k++) { // Correct the code
+		for (i = 0; i < rows; i++) { // Correct the code
+			for (j = 0; j < cols; j++) { // Correct the code
+				printf("Enter the value of a[%d][%d][%d] : ", k, i, j);
+				scanf("%d", &a[k][i][j]); // Correct the code
+			}
+		}
+	}
+	for (k = 0; k < pages; k++) { // Correct the code
+		for (i = 0; i < rows; i++) { // Correct the code
+			for (j = 0; j < cols; j++) { // Correct the code
+				printf("The value of a[%d][%d][%d] : %d\n", k, i, j, a[k][i][j]); // Correct the code
+			}
+		}
+	}
+}

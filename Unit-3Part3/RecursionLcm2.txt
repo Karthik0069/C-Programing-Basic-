@@ -1,0 +1,18 @@
+#include <stdio.h>
+int lcm(int , int);
+void main() {
+	int a, b, LCM;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &a, &b);
+	LCM = lcm(a, b);
+	printf("The lcm of two numbers %d and %d = %d\n", a, b, LCM);
+}
+int lcm(int a, int b) {
+	static int multiple = 0;
+	multiple += b;
+	if ((multiple % a == 0) && (multiple % b == 0)) {
+		return multiple;
+	} else {
+		return lcm(a, b);
+	}
+}

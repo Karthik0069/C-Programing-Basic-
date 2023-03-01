@@ -1,0 +1,44 @@
+#include <stdio.h>
+void main() {
+	int m, i, j, sumDig1 = 0, sumDig2 = 0, sumEven = 0, sumOdd = 0, sum = 0;
+	printf("Enter the order of the matrix : ");
+	scanf("%d", &m);
+	int arr[m][m];
+	printf("Enter %d elements : ", (m * m));
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < m; j++) {
+			scanf("%d", &arr[i][j]);
+		}
+	}
+	printf("The given matrix\n");
+	for (i = 0; i < m; i++) {
+		for(j = 0; j < m; j++) {
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < m; j++) {
+			if (i == j) {
+				sumDig1 += arr[i][j];
+			}
+			if (arr[i][j] % 2 == 0) {
+				sumEven += arr[i][j];
+			}
+			if (arr[i][j] % 2 != 0) {
+				sumOdd += arr[i][j];
+			}
+		}
+	}
+	i = 0;
+	for (j = m - 1; j >= 0; j--) {
+		if (i != j) {
+			sumDig2 += arr[i][j];
+		}
+		i++;
+	}
+	sum = sumDig1 + sumDig2;
+	printf("The sum of diagonal elements = %d\n", sum);
+	printf("The sum of even elements = %d\n", sumEven);
+	printf("The sum of odd elements = %d\n", sumOdd);
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+int fib(int);
+void main() {
+	int n, i;
+	printf("Enter value of n : ");
+	scanf("%d", &n);
+	printf("The fibonacci series of %d terms are : ", n);
+	for (i = 0; i < n; i++) { // Fill the code in for
+		printf(" %d ", fib(i)); // Complete the statement
+	}
+}
+int fib(int n) {
+	if (n == 0) { // Fill the condition
+		return 0; // Complete the statement
+	} else if (n == 1) { // Fill the condition
+		return 1; // Complete the statement
+	}else {
+		return fib(n - 1) + fib(n - 2); // Complete the statement
+	}
+}

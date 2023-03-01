@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() {
+	char a[20], b[20];
+	int i = 0, flag = 0;
+	printf("Enter the first string : ");
+	scanf("%s", a);
+	printf("Enter the second string : ");
+	scanf("%s", b);
+	while (a[i] != '\0') { //Complete the condition part
+		if (a[i] != b[i]) { //Complete the condition part
+			flag = 1; //Complete the statement
+			break;
+		}
+		i++;
+	}
+	if (flag == 0) { //Complete the condition part
+		printf("Two strings are equal\n");
+	} else {
+		printf("Two strings are not equal\n");
+	}
+}

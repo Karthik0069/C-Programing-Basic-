@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+void main() {
+	int i, j, n, k = 0;
+	char a[10][20], t[20];
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	printf("Enter %d strings : ", n);
+	for (i = 0; i < n; i++) { //Complete the code in for
+		scanf("%s", a[i]); //Complete the statement
+	}
+	printf("Before sorting the names are\n");
+	for (i = 0; i < n; i++) { //Complete the code in for
+		printf("%s\n", a[i]);
+	}
+	for (i = 0; i < n; i++) { //Complete the code in for
+		for (j = 0; a[i][j] != '\0'; j++) { //Complete the code in for
+			k = strcmp(a[j], a[j+1]);
+			if (k < 0) { // Write the condition
+				strcpy(t, a[j]);
+				strcpy(a[j], a[j+1]);
+				strcpy(a[j+1], t);
+			}
+		}
+	}
+	printf("After sorting the names are\n");
+	for (i = n - 1; i >= 0; i--) { //Complete the code in for
+		printf("%s\n", a[i]);
+	}
+}

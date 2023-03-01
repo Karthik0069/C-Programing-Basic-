@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main() {
+	char ch[80], temp;
+	int i, j;
+	printf("Enter a string : ");
+	scanf("%s", ch);
+	i = j = 0;
+	while (ch[i] != '\0') { // Write the condition part
+		j++;
+		i++;
+	}
+	j--;
+	i = 0;
+	while (i <= (j/2 + 1)) { // Write the condition part
+		temp = ch[i]; // Complete the statement
+		ch[i] = ch[j]; // Complete the statement
+		ch[j] = temp; // Complete the statement
+		i++;
+		j--;
+	}
+	printf("The reverse of a given string : %s\n", ch);
+}

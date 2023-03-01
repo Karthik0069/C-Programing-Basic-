@@ -1,0 +1,12 @@
+.#include <stdio.h>
+void main() {
+	char ch[20];
+	int i;
+	printf("Enter a string : ");
+	// Read string
+	scanf("%s", ch);
+	
+	for (i = 0;ch[i] != '\0';i++) { // Complete the code in the forloop
+	}
+	printf("The length of the string %s is %d\n", ch, i);
+}

@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+main() {
+	 char str[100], str1[30];
+	 char *index;
+	 printf("Enter the sentence : ");
+	 gets(str);
+	 printf("Enter the string to be searched : ");
+	 gets(str1);
+	 index = strstr(str, str1);
+	 if (index) {
+	 	printf("String found in the sentence at the position : %d\n", (index - str));
+	 } else {
+	 	printf("-1\n");
+	 }
+}

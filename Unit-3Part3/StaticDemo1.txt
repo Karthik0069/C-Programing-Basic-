@@ -1,0 +1,13 @@
+#include <stdio.h>
+void increment(void);
+void main() {
+	increment();
+	increment();
+	increment();
+}
+void increment(void) {
+	static int x = 3;
+	int y = 3;
+	printf("x = %d y = %d\n", x, y);
+	x++, y++;
+}

@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	char ch[100];
+	int i = 0;
+	printf("Enter a string (Read up to # is given) : ");
+	while ((ch[i] = getchar()) != '#') {
+		i++;
+	}
+	ch[i] = '\0';
+	printf("The given string is : ");
+	puts(ch);
+}

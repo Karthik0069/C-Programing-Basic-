@@ -1,0 +1,15 @@
+#include <stdio.h>
+int sum(int);
+void main() {
+	int n;
+	printf("Enter value of n : ");
+	scanf("%d", &n);
+	printf("Sum of %d natural numbers = %d\n", n, sum(n)); // Complete the statement
+}
+int sum(int n) {
+	if (n == 1) { // Fill the condition
+		return 1; // Complete the return statement
+	} else {
+		return (n + (sum(n - 1))); // Complete the return statement
+	}
+}
