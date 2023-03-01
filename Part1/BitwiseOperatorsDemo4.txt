@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	int num = 22, result;
+	result = ~num; //Use bitwise one's complement operator
+	printf("Bitwise one's complement result = %d\n", result);
+}

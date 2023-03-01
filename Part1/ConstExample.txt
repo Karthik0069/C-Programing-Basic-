@@ -1,0 +1,8 @@
+#include <stdio.h>
+void main() {
+	const int num1 = 15;
+	const int num2 = 25;
+	int total;
+	total = num1 + num2;
+	printf("The sum of %d and %d = %d\n", num1, num2, total);
+}

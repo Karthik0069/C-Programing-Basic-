@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+double fact(double );
+void main() {
+	double n, degree, temp, sum = 0;
+	printf("Enter the value of n : ");
+	scanf("%lf", &n);
+	printf("Enter degrees : ");
+	scanf("%lf", &degree);
+	temp = degree;
+	degree = (double)(degree * (3.14 / 180.0));
+	for (int i = 0, j = 0; i < n; i++, j = j + 2) {
+		if(i % 2 == 0) {
+			sum = sum + ((double)pow(degree, j)/(double)fact(j));
+		} else {
+			sum = sum - ((double)pow(degree, j)/(double)fact(j));
+		}
+	}
+	printf("The cosine value cos(%f) = %f\n", temp, sum);
+	printf("The cosine value using built-in cos(%f) = %f\n", temp, cos(degree));
+}
+double fact(double x) {
+	double factt = 1;
+	for (int k = 1; k <= x; k++) {
+		factt = factt * k;
+	}
+	return factt;
+}
+
+

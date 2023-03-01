@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	char number = '0';
+	printf("Given character = %c\n", number);
+	printf("Given character's ASCII value = %d\n", number);
+}

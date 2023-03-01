@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+	int x = 19;
+	(x & 1)? printf("%d is an odd number\n", x): printf("%d is an even number\n", x); //Write the correct code
+	return 0;
+}

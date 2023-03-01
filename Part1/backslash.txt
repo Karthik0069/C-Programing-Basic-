@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	printf("One\tTwo");
+	printf("Three\n");
+	printf("Four\nFive\n");
+}

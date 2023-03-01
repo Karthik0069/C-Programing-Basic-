@@ -1,0 +1,9 @@
+#include <stdio.h>
+void main() {
+	int number;
+	printf("Enter a number : ");
+	scanf("%d", &number);
+	int ones_place;
+	ones_place = number % 10;
+	printf("The digit at ones place of %d : %d\n",number,ones_place);
+}
