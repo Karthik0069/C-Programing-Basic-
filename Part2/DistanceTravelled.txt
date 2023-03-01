@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+void main() {
+	float acc,velo,tim;
+	printf("Enter the acceleration value : ");
+	scanf("%f", &acc);
+	printf("Enter the initial velocity : ");
+	scanf("%f", &velo);
+	printf("Enter the time taken : ");
+	scanf("%f", &tim);
+	float dis;
+	dis = (velo*tim) + ((1.0/2.0) * acc*(pow(tim,2)));
+	printf("Distance travelled : %f\n", dis);
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+void main() {
+	int i, a, n, a_power_n;
+	printf("Enter two integer values for a and n : ");
+	scanf("%d %d", &a, &n);
+	for (i = 1;i <= n;i++) { // Write the initialization, condition and increment part
+		a_power_n = pow(a,n); // Calculate the value
+	}
+	printf("a_power_n = %d\n", a_power_n);
+}

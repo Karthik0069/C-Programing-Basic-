@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	int num;
+	printf("Enter hour : ");
+	scanf("%d", &num);
+	if(num <= 17 && num >= 9) {
+		printf("Working hour\n");
+	}
+	else {
+		printf("Non-working hour\n");
+	}
+}

@@ -1,0 +1,5 @@
+#include <stdio.h>
+void main() {
+	printf("printf function is present in stdio.h\n");
+	printf("I love learning\n");
+}

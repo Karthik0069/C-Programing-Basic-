@@ -1,0 +1,5 @@
+#include <stdio.h>
+void main() {
+	enum state {working = 1, failed = 0, freezed = 0};
+	printf("%d, %d, %d\n", working, failed, freezed);
+}

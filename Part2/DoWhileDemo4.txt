@@ -1,0 +1,10 @@
+#include <stdio.h>
+void main() {
+	int i = 1,k = 1, n; // complete the initialization
+	printf("Enter the upper limit of the series : ");
+	scanf("%d", &n);
+	do {
+		printf("%d\t", i);
+		i = i + pow(2,k);k++; // complete the statement
+	} while (i <= n);
+}

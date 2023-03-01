@@ -1,0 +1,6 @@
+#include<stdio.h>
+void main()
+{
+	printf("Sky is the limit\n");
+	return 0;
+}

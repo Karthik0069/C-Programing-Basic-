@@ -1,0 +1,5 @@
+#include <stdio.h>
+void main() {
+	printf("First string = %s\n", "CodeTantra.com");
+	printf("Second string = %s\n", "World's most advanced interactive learning platform.");
+}

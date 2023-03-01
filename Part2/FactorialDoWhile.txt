@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	int i, n, factorial = 1;
+	printf("Enter an integer : ");
+	scanf("%d", &n);
+	i = 2;
+	do {
+		factorial = factorial * i; // complete the statement
+		i++;
+	} while (i <= n); // complete the condition
+	printf("Factorial of given number %d = %d\n", n, factorial);
+}

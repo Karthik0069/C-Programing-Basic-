@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main() {
+	char gender;
+	short int age;
+	float salary;
+	printf("Enter an employee gender (M/F), age and salary : ");
+	scanf("%c %hd %f",&gender,&age,&salary);// Read the data
+	printf("Employee gender is : %c\n", gender); // Complete the statement
+	printf("Employee age is : %hd\n", age); // Complete the statement
+	printf("Employee salary is : %f\n", salary); // Complete the statement
+}

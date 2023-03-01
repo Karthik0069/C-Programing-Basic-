@@ -1,0 +1,8 @@
+#include <stdio.h>
+void main() {
+	char ch = 97; // initialize ch with the first lowercase alphabet or corresponding ASCII value
+	do {
+		printf("%c ", ch);
+		ch = ch + 1; // complete the statement
+	} while (ch <= 122); // complete the condition
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+void main(){
+	int hour;
+	printf("Enter hour : ");
+	scanf("%d", &hour);
+	if ((hour <= 11) && (hour >= 0)) { //fill the condition for AM here 
+		printf("AM\n");
+	} else if ((hour >= 12) && (hour <= 23)) { //fill the condition for PM here
+		printf("PM\n");
+	} else { 
+		printf("Invalid Hour!!\n");
+	}
+}
+ 
+ 

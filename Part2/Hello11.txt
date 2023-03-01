@@ -1,0 +1,5 @@
+#include <stdio.h>
+void      main() {
+	printf("Hello, char data type allocates only 1 byte of memory");
+	return 0;
+}

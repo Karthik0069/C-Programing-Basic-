@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int a;
+	short int b;
+	long int c;
+	float d;
+	double e;
+	long double f;
+	char ch;
+	printf("Enter int, short int and long int values : ");
+	scanf("%d %hd %ld",&a,&b,&c);
+	printf("Enter float, double and long double values : ");
+	scanf("%f %lf %Lf %c",&d,&e,&f,&ch);
+	printf("Enter a character : \n");
+	printf("int : %d\n", a);
+	printf("short int : %hd\n", b);
+	printf("long int : %ld\n", c);
+	printf("float : %f\n", d);
+	printf("double : %lf\n", e);
+	printf("long double : %Lf\n", f);
+	printf("character : %c\n", ch);
+	return 0;
+}

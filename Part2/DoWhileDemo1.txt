@@ -1,0 +1,10 @@
+#include <stdio.h>
+void main() {
+	int i = 0, n;
+	printf("Enter an integer : ");
+	scanf("%d", &n); // Fill the code in scanf()
+	do {
+		printf("I Love Earth\n");
+		i = i + 1; // complete the statement
+	} while (i < n); // complete the condition
+}

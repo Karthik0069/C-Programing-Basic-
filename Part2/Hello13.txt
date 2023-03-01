@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main() {
+	printf("Every executable C program should have a main() function.");
+	return 0;
+}

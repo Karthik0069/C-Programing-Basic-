@@ -1,0 +1,5 @@
+#include <stdio.h>
+void main() {
+	printf("Hello, # is a preprocessor in C");
+	return 0;
+}

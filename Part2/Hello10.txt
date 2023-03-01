@@ -1,0 +1,5 @@
+#include <stdio.h>
+ void main() {
+	printf("Hello, float data type allocates 4 bytes in memory");
+	return 0;
+}

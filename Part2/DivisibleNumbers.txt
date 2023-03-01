@@ -1,0 +1,15 @@
+#include <stdio.h>
+void main() {
+	int x, y, a, b;
+	printf("Enter the limits x and y : ");
+	scanf("%d%d", &x, &y);
+	printf("Enter the divisors a and b : ");
+	scanf("%d%d", &a, &b);
+	printf("Output : ");
+	for (int i = x; i <= y; i++) {
+		if((i % a == 0) && (i % b == 0)) {
+			printf("%d ", i);
+		}
+	}
+	printf("\n");
+}

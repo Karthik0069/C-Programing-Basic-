@@ -1,0 +1,7 @@
+#include <stdio.h>
+void main() {
+	double num1 = 15.34545, num2 = 12.4245,result;
+	printf("Given double values are num1 = %f, num2 = %f\n", num1, num2);
+	result = num1 / num2;
+	printf("Result of division = %f\n", result);
+}
