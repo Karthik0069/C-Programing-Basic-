@@ -1,0 +1,9 @@
+/*
+  This is a sample C program
+  developed by CodeTantra
+*/
+#include <stdio.h>
+void main() {
+	// this is an end of line comment
+	printf("I love C Language!\n");
+}

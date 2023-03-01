@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+void main() {
+	int binary, digit, temp, lsb = 0, decimal = 0, i = 0;
+	printf("Enter any binary number : ");
+	scanf("%d", &binary);
+	temp = binary;
+	do {
+		if(temp == 0) {
+			if(lsb == 1) {
+				decimal = pow(2,i);
+			}
+		} else {
+			digit = temp % 10;
+			if(digit == 1) {
+				decimal = decimal + pow(2,i);
+			}
+			lsb = temp;
+			temp = temp / 10;
+		}
+		i++;
+	}while(temp != 0);
+	printf("Decimal value : %d\n", decimal);
+}

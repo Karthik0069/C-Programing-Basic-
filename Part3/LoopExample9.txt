@@ -1,0 +1,33 @@
+int fact(int );
+#include <stdio.h>
+#include <math.h>
+void main() {
+	// decalre variables here
+	int n, i, count;
+	float degree, sum = 0.0,temp;
+	
+	printf("Enter the value of n : ");
+	scanf("%d", &n);
+	printf("Enter degrees : ");
+	scanf("%f", &degree);
+	// write code here
+	temp = degree;
+	degree = degree * (3.14/180.0);
+	for (i = 1,count = 1; i <= n; i++,count = count + 2) {
+		if(i % 2 != 0) {
+			sum = sum + pow(degree,count)/fact(count);
+		} else {
+			sum = sum - pow(degree, count)/fact(count);
+		}
+	}
+	printf("The sine value sin(%f) = %f\n", temp, sum);
+	printf("The sine value using built-in sin(%f) = %f\n", temp, sin(degree));	
+}	
+
+int fact(int x) {
+	int factor = 1;
+	for (int i = 1; i <= x; i++) {
+		factor = factor * i;
+	}
+	return factor;
+}

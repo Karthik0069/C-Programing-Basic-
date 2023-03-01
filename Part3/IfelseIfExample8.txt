@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	int a,b;
+	printf("Enter two integer values : ");
+	scanf("%d%d", &a, &b);
+	if((a >= 25 && a <= 35) || (b >= 25 && b <= 35)) {
+		printf("Within range\n");
+	}
+	else {
+		printf("Out of range\n");
+	}
+}

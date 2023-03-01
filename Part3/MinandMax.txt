@@ -1,0 +1,8 @@
+#include <stdio.h>
+void main() {
+	int a,b,c;
+	printf("Enter 3 numbers : ");
+	scanf("%d%d%d", &a,&b,&c);
+	(a > b)&&(b > c)?printf("The max and min of three numbers are : %d %d\n", a,c):(c > b)&&(b > a)?printf("The max and min of three numbers are : %d %d\n", c,a):(b > a)&&(a > c)?printf("The max and min of three numbers are : %d %d\n", b,c):(c > a) && (c > b)?
+	printf("The max and min of three numbers are : %d %d\n", c,b):(a > c) && (c > b)?printf("The max and min of three numbers are : %d %d\n", a,b):printf("The max and min of three numbers are : %d %d\n", b,a);
+}

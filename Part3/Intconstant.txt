@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+	int number;
+	number = 014+0x56 + 9;
+	printf("Result = %d\n",number );
+	return 0;
+}

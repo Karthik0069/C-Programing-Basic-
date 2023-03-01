@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main() {
+	int big,no1,no2;
+	printf("Enter 2 numbers : ");
+	scanf("%d%d", &no1,&no2);
+	if(no2 > no1) {
+		printf("The largest number : %d\n", no2);
+		printf("The smallest number : %d\n", no1);
+	}
+	else {
+		printf("The largest number : %d\n", no1);
+		printf("The smallest number : %d\n", no2);
+	}
+}

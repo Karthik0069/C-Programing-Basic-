@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void main() {
+	int distance, yards, feet, inches;
+	printf("distance : ");
+	scanf("%d", &distance);
+	yards = distance / 36;
+	inches = distance % 36;
+	feet = inches / 12;
+	inches = inches % 12;
+	printf("equal to %d yards %d feet and %d inches\n", yards,feet,inches);
+}

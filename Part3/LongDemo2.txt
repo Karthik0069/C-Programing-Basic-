@@ -1,0 +1,6 @@
+#include <stdio.h>
+void main() {
+	long int number1 = 234567L, number2 = 123456L, sub;
+	sub = number1 - number2;
+	printf ("Difference of the given two numbers = %ld\n",sub);
+}

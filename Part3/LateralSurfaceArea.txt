@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+#define PI 3.14
+void main() {
+	float radius,height,surfaceArea;
+	printf("radius, height : ");
+	scanf("%f%f", &radius,&height);
+	surfaceArea = PI * radius * sqrt((radius * radius) + (height * height));
+	printf("surface area : %f\n", surfaceArea);
+}

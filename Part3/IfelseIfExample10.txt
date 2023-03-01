@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+void main() {
+	int a,b;
+	printf("Enter two integer values : ");
+	scanf("%d%d", &a, &b);
+	int num1,num2;
+	num1 = abs(100 - a);
+	num2 = abs(100 - b);
+	if(num1 < num2) {
+		printf("%d\n", a);
+	} else {
+		printf("%d\n", b);
+	}
+}
