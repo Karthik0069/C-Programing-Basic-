@@ -1,0 +1,18 @@
+#include <stdio.h>
+union employee {
+	int age;
+	float sal;
+	char marital_status;
+};
+void main() {
+	union employee e1, e2;
+	printf("Enter employee's age : ");
+	scanf("%d", &e2.age);
+	printf("Age of the employee : %d\n", e2.age);
+	printf("Enter employee's salary : ");
+	scanf("%f", &e2.sal);
+	printf("Salary of the employee : %f\n", e2.sal);
+	printf("Enter employee's marital status (y|n) : ");
+	scanf(" %c", &e2.marital_status);
+	printf("Marital status of the employee : %c\n", e2.marital_status);
+}

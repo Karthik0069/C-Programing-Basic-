@@ -1,0 +1,19 @@
+#include <stdio.h>
+struct employee {
+	char name[20];
+	int age;
+	float sal;
+};
+void main() {
+	struct employee s1, s2, s3;
+	printf("Enter first employee's name, age and salary : ");
+	scanf("%s %d %f", &s1.name, &s1.age, &s1.sal); // Write the correct code
+	printf("Enter second employee's name, age and salary : ");
+	scanf("%s %d %f", &s2.name, &s2.age, &s2.sal); // Write the correct code
+	printf("Enter third employee's name, age and salary : ");
+	scanf("%s %d %f", &s3.name, &s3.age, &s3.sal); // Write the correct code
+	printf("%7s %15s %15s\n", "AGE", "Name", "SALARY");
+	printf("%8d %15s %15f\n", s1.age, s1.name, s1.sal); // Write the correct code
+	printf("%8d %15s %15f\n", s2.age, s2.name, s2.sal); // Write the correct code
+	printf("%8d %15s %15f\n", s3.age, s3.name, s3.sal); // Write the correct code
+}

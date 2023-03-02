@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main() {
+	struct book {
+		char name[30];
+		float price;
+		int pages;
+	};
+	struct book b1 = {"C-Language", 155.95, 375};
+	struct book b2;
+	b2 = b1;
+	printf("First book information is\nName : %s\nNumber of pages: %d\nPrice of the book : %f\n", b1.name, b1.pages, b1.price);
+	printf("Second book information is\nName : %s\nNumber of pages: %d\nPrice of the book : %f\n", b2.name, b2.pages, b2.price);
+}

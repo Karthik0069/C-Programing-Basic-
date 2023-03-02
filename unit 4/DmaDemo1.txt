@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main() {
+	int *a, *b;
+	a = (int *)malloc(sizeof(int)); // Allocate memory
+	b = (int *)malloc(sizeof(int)); // Allocate memory
+	printf("Enter two integer values : ");
+	scanf("%d %d", a, b);
+	printf("Sum of two integers %d and %d = %d\n", *a, *b, (*a + *b)); // Write the correct code
+}

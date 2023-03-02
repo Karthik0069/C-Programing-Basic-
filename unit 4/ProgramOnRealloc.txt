@@ -1,0 +1,14 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+int main() {
+	int *ptr = (int *)malloc(sizeof(int) * 2);
+	int i;
+	int *ptr_new;
+	*ptr = 10;
+	*(ptr + 1) = 20;
+	ptr = (int *)realloc(ptr, 1);// Reallocate the *ptr size to 3
+	*(ptr + 2) = 30;//Assign the value 30 to newly allocated memory
+	ptr_new = ptr;
+	for (i = 0; i < 3; i++)
+		printf("%d ", *(ptr_new + i)); 
+} 

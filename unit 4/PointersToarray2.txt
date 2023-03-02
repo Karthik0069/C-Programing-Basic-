@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main() {
+	int (*a)[10], i, j, m, n, r1, r2, temp;
+	printf("Enter the row & column sizes of matrix : ");
+	scanf("%d %d", &m, &n);
+	a = (int *) malloc(m * n * sizeof(int)); // Allocate heap memory
+	printf("Enter %d elements : ", m * n);
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			scanf("%d", *(a + i) + j); // Complete the statement
+		}
+	}
+	printf("The given matrix is\n");
+	for (i = 0; i < m; i++) {
+		for (j = 0; j < n; j++) {
+			printf("%d ", *(*(a + i) + j)); // Complete the statement
+		}
+		printf("\n");
+	}
+	printf("Enter row numbers to be interchange : ");
+	scanf("%d %d", &r1, &r2);
+	if ((r1 < m) && (r2 < m) && (r1 != r2)) { // Write the condition part
+		for (i = 0; i < n; i++) { //Write the code in for
+			temp = *(*(a + r1) + i);
+			*(*(a + r1) + i) = *(*(a + r2) + i);
+			*(*(a + r2) + i) = temp;
+		}
+		printf("After interchange the matrix is\n");
+		for (i = 0; i < m; i++) {
+			for (j = 0; j < n; j++) {
+				printf("%d ", *(*(a + i) + j)); // Complete the statement
+			}
+			printf("\n");
+		}
+	} else {
+		printf("Interchange of rows are not possible\n");
+	}
+}

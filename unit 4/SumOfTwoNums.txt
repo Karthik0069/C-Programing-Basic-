@@ -1,0 +1,16 @@
+void addition(int , int, int *);
+void addition(int a, int b, int *sum) {
+	*sum = a + b;
+}
+
+//Main
+
+#include <stdio.h>
+#include "SumOfTwoNums1.c"
+void main() {
+	int firstNum, secondNum, sum = 0;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &firstNum, &secondNum);
+	addition(firstNum, secondNum, &sum);
+	printf("Sum of two integers : %d\n", sum);
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main() {
+	int *p;
+	p = (int *) malloc(sizeof(int));
+	*p = 99;
+	printf("The given value = %d\n", *p);
+	free(p);
+	p = (int *) malloc(sizeof(int));
+	*p = 100;
+	printf("The given value = %d\n", *p);
+	free(p);
+}

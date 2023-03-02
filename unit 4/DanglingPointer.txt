@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main() {
+	int *p, *q;
+	p = (int *) malloc(sizeof(int));
+	*p = 99;
+
+printf("The given value = %d\n", *p);
+}

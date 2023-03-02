@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+void main() {
+	float *a[5], f1, f2;
+	f1 = 10.24;
+	f2 = 12.54;
+	a[0] = &f1;
+	a[1] = &f2;
+	printf("First value = %f\n", *(a[0]));
+	printf("Second value = %f\n", *(a[1]));
+}

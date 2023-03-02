@@ -1,0 +1,14 @@
+#include <stdio.h>
+struct book {
+	char name[30];
+	float price;
+	int pages;
+};
+void display(struct book);
+void main() {
+	struct book b = {"Learn C Language", 325.25, 468};
+	display(b);
+}
+void display(struct book b) { // Write the correct code
+	printf("Given book information is\nName : %s\nNumber of pages: %d\nPrice of the book : %f\n", b.name, b.pages, b.price); // Write the correct code
+}

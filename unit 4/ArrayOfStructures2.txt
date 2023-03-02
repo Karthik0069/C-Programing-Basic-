@@ -1,0 +1,20 @@
+#include <stdio.h>
+struct student {
+	float regno, s1, s2, s3;
+	float total, avg;
+};
+void main() {
+	int i, n;
+	printf("Enter number of students : ");
+	scanf("%d", &n);
+	struct student s[n];
+	for (i = 0; i < n; i++) { // Complete the code in for
+		printf("Enter regdno, three subjects marks of student-%d: ", i);
+		scanf("%f %f %f %f", &s[i].regno, &s[i].s1, &s[i].s2, &s[i].s3);
+	}
+	for (i = 0; i < n; i++) { // Complete the code in for
+		s[i].total = (s[i].s1 + s[i].s2 + s[i].s3);
+		s[i].avg = s[i].total/3.0;
+		printf("Student-%d Regdno = %d\tTotal marks = %d\tAverage marks = %f\n", i, (int)s[i].regno, (int)s[i].total, s[i].avg); // Fill the code in printf()
+	}
+}

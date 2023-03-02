@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+main() {
+	int *p, *q, *c;
+	p = (int *) malloc(sizeof(int));
+	q = (int *) malloc(sizeof(int));
+	printf("Enter two integer values : ");
+	scanf("%d %d", p, q);
+	printf("The largest of two numbers %d and %d is : ", *p, *q);
+	if(*p >= *q) {
+		printf("%d\n", *p);
+	}
+	else {
+		printf("%d\n", *q);
+	}
+}

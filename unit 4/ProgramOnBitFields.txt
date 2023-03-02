@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct date {
+	unsigned int day : 5;
+	unsigned int month : 4;
+	unsigned int year;
+};
+struct date1 {
+	unsigned int day;
+	unsigned int month;
+	unsigned int year;
+};
+void main() {
+	struct date d;
+	struct date1 d1;
+	printf("Enter a date : ");
+	scanf("%d%d%d", &d1.day, &d1.month, &d1.year);
+	d.day = d1.day;
+	d.month = d1.month;
+	d.year = d1.year;
+	printf("The size of the structure without bit-fields : %zu\n", sizeof(struct date1)); // Fill in the missing code
+	printf("Date stored without bit-fields : %d/%d/%d\n", d1.day, d1.month, d1.year); // Fill in the missing code
+	printf("The size of the structure uses bit-fields : %zu\n", sizeof(struct date)); // Fill in the missing code
+	printf("Date stored in bit-fields : %d/%d/%d\n", d.day, d.month, d.year); // Fill in the missing code
+}

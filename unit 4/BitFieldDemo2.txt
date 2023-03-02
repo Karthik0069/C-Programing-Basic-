@@ -1,0 +1,9 @@
+#include <stdio.h>
+struct test {
+	unsigned int x : 3;
+	unsigned int y : 3;
+	unsigned int z : 5;
+};
+void main() {
+	printf("The size of a given structure = %d\n", sizeof(struct test));
+}

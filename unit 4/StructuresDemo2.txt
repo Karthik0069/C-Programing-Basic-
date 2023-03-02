@@ -1,0 +1,17 @@
+#include <stdio.h>
+struct date {
+	int date;
+	int month;
+	int year;
+};
+struct employee {
+	char ename[20];
+	float salary;
+	struct date doj;
+};
+void main() {
+	struct employee emp1 = {"BillGates", 1000.50, {22, 6, 1990}};
+	printf("Employee Name   : %s\n", emp1.ename); // Write the correct code
+	printf("Employee Salary : %f\n", emp1.salary); // Write the correct code
+	printf("Employee DOJ    : %d/%d/%d\n", emp1.doj.date, emp1.doj.month, emp1.doj.year); // Write the correct code
+}

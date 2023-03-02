@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct book {
+	char name[30];
+	float price;
+	int pages;
+};
+void read(struct book *);
+void display(struct book *);
+void main() {
+	struct book b;
+	read(&b);
+	display(&b);
+}
+void read(struct book *ptr) { // Write the correct code
+	printf("Enter a book name : ");
+	scanf("%s", ptr->name); // Write the correct code
+	printf("Enter price of the book : ");
+	scanf("%f", &ptr->price); // Write the correct code
+	printf("Enter number of pages in the book : ");
+	scanf("%d", &ptr->pages); // Write the correct code
+}
+void display(struct book *ptr) { // Write the correct code
+	printf("Given book information is\nName : %s\nNumber of pages: %d\nPrice of the book : %f\n", ptr->name, ptr->pages, ptr->price); // Write the correct code
+}

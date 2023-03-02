@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int *p;
+	p = (int *) malloc(sizeof(int));
+	if (p == NULL) {
+		printf("Failed to allocate space for %d bytes", sizeof(int));
+		return 1;
+	}
+	*p = 15;
+	printf("Value with in heap memory = %d\n", *p);
+	free(p);
+	return 0;
+}

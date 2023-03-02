@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+union student {
+	char name[20];
+	int roll_no, s1;
+};
+void main() {
+	int n, i, j;
+	printf("Enter the number of students : ");
+	scanf("%d", &n);
+	union student st[n];
+	for (i = 1; i <= n; i++) {
+		printf("Enter student - %d data\nRollno : ", i);
+		scanf("%d", &st[i].roll_no);
+		printf("Rollno : %d\n", st[i].roll_no);
+		printf("Name : ");
+		scanf("%s", st[i].name);
+		printf("Name : %s\n", st[i].name);
+		for (j = 1; j <= 3; j++) {
+			printf("Subject - %d marks : ", j);
+			scanf("%d", &st[i].s1);
+			printf("subject - %d marks : %d\n", j, st[i].s1);
+		}
+	}
+}

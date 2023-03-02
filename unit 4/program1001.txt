@@ -1,0 +1,21 @@
+void swap(int , int);
+void swap(int a, int b) {
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+	printf("After swapping in swap : x = %d y = %d\n", a, b);
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program1001a.c"
+void main() {
+	int a, b;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &a, &b);
+	printf("Before swapping in main : a = %d b = %d\n", a, b);
+	swap(a, b);
+	printf("After swapping in main : a = %d b = %d\n", a, b);
+}

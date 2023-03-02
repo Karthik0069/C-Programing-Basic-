@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	struct book {
+		char name[30];
+		int pages;
+		float price;
+	};
+	struct book b = {"C Programming Language", 350, 425.75};
+	struct book *p;
+	p = &b;
+	printf("Name : %s\nNumber of pages: %d\nPrice of the book : %f\n", p->name, p->pages, p->price); // Write the correct code
+}

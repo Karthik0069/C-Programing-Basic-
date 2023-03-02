@@ -1,0 +1,11 @@
+#include <stdio.h>
+struct date {
+	unsigned int day : 5;
+	unsigned int month : 4;
+	unsigned int year;
+};
+void main() {
+	struct date d = {31, 12, 2001};
+	printf("Given date is: %d/%d/%d\n", d.day, d.month, d.year);
+	printf("The size of the given structure : %d\n", sizeof(struct date));
+}

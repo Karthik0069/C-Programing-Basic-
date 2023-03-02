@@ -1,0 +1,22 @@
+void swap(int *firstPointer, int *secondPointer) {
+	// Write the code to swap
+	int temp;
+	temp = *firstPointer;
+	*firstPointer = *secondPointer;
+	*secondPointer = temp;
+	printf("In swap : *firstPointer = %d *secondPointer = %d\n", *firstPointer, *secondPointer);
+}
+
+//Main
+
+#include <stdio.h>
+#include "CallByAddress1a.c"
+void swap(int *, int *);
+void main() {
+	int firstNum, secondNum;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &firstNum, &secondNum);
+	printf("Before swapping : firstNum = %d secondNum = %d\n", firstNum, secondNum);
+	swap(&firstNum, &secondNum);
+	printf("After swapping : firstNum = %d secondNum = %d\n", firstNum, secondNum);
+}

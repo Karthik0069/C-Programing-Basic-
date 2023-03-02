@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+struct account {
+	char name[20];
+	int acc_no;
+	float balance;
+};
+void main() {
+	struct account *p;
+	p = (struct account *) malloc(sizeof(struct account)); // Allocate memory
+	printf("Enter the name of account holder : ");
+	scanf("%s", p->name); // Write the correct code
+	printf("Enter the account number : ");
+	scanf("%d", &(p->acc_no)); // Write the correct code
+	printf("Enter the balance : ");
+	scanf("%f", &(p->balance)); // Write the correct code
+	printf("The given account details are...\n");
+	printf("Name: %s\nAccount number: %d\nBalance: %f\n", p->name, p->acc_no, p->balance); // Write the correct code
+}

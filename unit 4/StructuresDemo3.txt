@@ -1,0 +1,16 @@
+#include <stdio.h>
+struct student {
+	char std_name[30];
+	int regdno;
+	struct date {
+		int date;
+		int month;
+		int year;
+	}day;
+};
+void main() {
+	struct student s1 = {"Sundar_Pichai", 1001, 12, 8, 1995};
+	printf("Student Name   : %s\n", s1.std_name); // Write the correct code
+	printf("Student RegdNo : %d\n", s1.regdno); // Write the correct code
+	printf("Student DOJ    : %d/%d/%d\n", s1.day.date, s1.day.month, s1.day.year); // Write the correct code
+}

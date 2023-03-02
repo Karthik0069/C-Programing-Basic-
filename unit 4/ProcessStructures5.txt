@@ -1,0 +1,22 @@
+#include <stdio.h>
+struct movie {
+	char title[20];
+	char director[20];
+	int year;
+	int minutes_running;
+};
+void main() {
+	struct movie m;
+	printf("Enter the movie name : ");
+	scanf("%s", &m.title); // Fill the code in scanf()
+	printf("Enter the director name : ");
+	scanf("%s", &m.director); // Fill the code in scanf()
+	printf("Enter the year in which the movie is released : ");
+	scanf("%d", &m.year); // Fill the code in scanf()
+	printf("Enter the duration of the movie in minutes : ");
+	scanf("%d", &m.minutes_running); // Fill the code in scanf()
+	printf("Movie title = %s\n", m.title); // Fill the code in printf()
+	printf("Movie director = %s\n", m.director); // Fill the code in printf()
+	printf("Movie year = %d\n", m.year); // Fill the code in printf()
+	printf("Movie duration in minutes = %d\n", m.minutes_running); // Fill the code in printf()
+}

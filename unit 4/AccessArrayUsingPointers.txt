@@ -1,0 +1,31 @@
+void read(int *, int);
+void display(int *, int);
+void read(int *p, int n) {
+	int i;
+	for (i = 0; i < n; i++) {
+		scanf("%d", (p + i));
+	}
+}
+void display(int *p, int n) {
+	int i;
+	for (i = 0; i < n; i++) {
+		printf("%d ", *(p + i));
+	}
+}
+
+//AccessArrayUsingPointers
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "AccessArray.c"
+void main() {
+	int *p, n, i;
+	printf("Enter n value : ");
+	scanf("%d", &n);
+	p = (int *) malloc(n * sizeof(int));
+	printf("Enter %d values : ", n);
+	read(p, n);
+	printf("The given array elements are : ");
+	display(p, n);
+	printf("\n");
+}

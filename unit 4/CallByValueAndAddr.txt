@@ -1,0 +1,29 @@
+void callByValue(int a, int b) {
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+	printf("After swapping in call-by-value : firstValue = %d secondValue = %d\n", a, b);
+}
+void callByAddress(int *a, int *b) {
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
+	printf("After swapping in call-by-address : *firstPointer = %d *secondPointer = %d\n", *a, *b);
+}
+
+//Main
+
+#include <stdio.h>
+#include "CallByValueAndAddr1.c"
+void main() {
+	int firstNum, secondNum;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &firstNum, &secondNum);
+	printf("Before swapping in main : firstNum = %d secondNum = %d\n", firstNum, secondNum);
+	callByValue(firstNum, secondNum);
+	printf("After call-by-value in main : firstNum = %d secondNum = %d\n", firstNum, secondNum);
+	callByAddress(&firstNum, &secondNum);
+	printf("After call-by-address in main : firstNum = %d secondNum = %d\n", firstNum, secondNum);
+}

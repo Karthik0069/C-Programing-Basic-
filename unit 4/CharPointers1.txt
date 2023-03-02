@@ -1,0 +1,7 @@
+#include <stdio.h>
+void main() {
+	char *ch = "I love coding";
+	printf("The given string = %s\n", ch);
+	ch = "Learn coding from CodeTantra";
+	printf("The given string = %s\n", ch);
+}

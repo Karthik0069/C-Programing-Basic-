@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main() {
+	int *a;
+	float *b;
+	char *c;
+	printf("sizeof an int ptr = %zu\n", sizeof(a));
+	printf("sizeof a float ptr = %zu\n", sizeof(b));
+	printf("sizeof a char ptr = %zu\n", sizeof(c));
+	printf("sizeof a float type = %zu\n", sizeof(*b));
+	printf("sizeof a char type = %zu\n", sizeof(*c));
+}

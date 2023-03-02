@@ -1,0 +1,12 @@
+#include <stdio.h>
+void main() {
+	char *ch1 = "I love coding";
+	char ch2[20];
+	int i = 0;
+	printf("The given string = %s\n", ch1);
+	while(*ch1 != '\0') {
+		ch2[i++] = *ch1++;
+	}
+	ch2[i] = '\0';
+	printf("The copied string = %s\n", ch2);
+}
