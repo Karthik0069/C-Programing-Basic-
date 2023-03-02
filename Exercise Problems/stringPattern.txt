@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char ch[50],i=0,j,len;
+	printf("Enter the string : ");
+	scanf("%s",ch);
+	len=strlen(ch);
+	while(i<len)
+	{
+		for(j=0;j<=i;j++)
+		{
+			printf("%c",ch[j]);
+	
+		}
+
+	printf("\n");
+	i++;
+    }
+	
+}

@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main() {
+	FILE *fp;
+	char ch;
+	fp = fopen("SampleText1.txt", "w"); // Open a new file in write mode
+	printf("Enter the text with @ at end : ");
+	while ((ch=getchar())!='@') { // Repeat loop till read @ at the end
+		putc(ch,fp); // Put read character onto the file 
+	}
+	putc('@',fp); // Put delimiter @ at the end on the file
+	fclose(fp); // Close the file
+	fp = fopen("SampleText1.txt", "r"); // Open the existed file in read mode
+	printf("Given message is : ");
+	while ((ch=fgetc(fp))!='@') { // Repeat loop till get @ at the end of existed file
+		putchar(ch); // Put the character on the screen
+	}
+	printf("\n");
+	fclose(fp); // Close the file
+}

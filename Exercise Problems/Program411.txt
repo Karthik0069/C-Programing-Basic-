@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+	int a,rw,i;
+	printf("Enter an integer number : ");
+	scanf("%d",&a);
+	printf("Enter number of rows : ");
+	scanf("%d",&rw);
+	for(i=1;i<=rw;i++)
+	{
+		printf("%d * %d = %d\n",a,i,a*i);
+	}
+}

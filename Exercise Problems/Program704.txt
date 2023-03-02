@@ -1,0 +1,19 @@
+int factorial(int n);//declaration
+int factorial(int n)//calling function
+{
+	int i,fact=1;
+	for(i=1;i<=n;i++)
+	fact=fact*i;
+	return fact;
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program704a.c"
+void main() {
+	int number;
+	printf("Enter a number : ");
+	scanf("%d", &number);
+	printf("Factorial of a given number %d = %d\n", number, factorial(number));
+}

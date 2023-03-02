@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+	int s1,s2,s3,s4,s5,s6,t;
+	float p;
+	printf("Enter the six subjects marks : ");
+	scanf("%d%d%d%d%d%d",&s1,&s2,&s3,&s4,&s5,&s6);
+	t=(s1+s2+s3+s4+s5+s6);
+	p=(float)t/6;
+	printf("Total marks : %d\n",t);
+	printf("Percentage : %f\n",p);
+	if(p>=90)
+	printf("Grade : A\n");
+	else if(p>=80&&p<90)
+	printf("Grade : B\n");
+	else if(p>=70&&p<80)
+	printf("Grade : C\n");
+	else if(p>=60&&p<70)
+	printf("Grade : D\n");
+	else if(p>=40&&p<60)
+	printf("Grade : E\n");
+	else if(p<40)
+	printf("Grade : Fail\n");
+}

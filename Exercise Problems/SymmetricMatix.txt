@@ -1,0 +1,47 @@
+#include<stdio.h>
+void main()
+{
+	int i,j,a[50][50],r,c;
+	printf("Enter the order of matrix : ");
+	scanf("%d%d",&r,&c);
+	printf("Enter %d elements : ",r*c);
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	printf("The given matrix is\n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			printf("%d ",a[i][j]);
+		}
+		printf("\n");
+	}
+	printf("Transpose of the given matrix is\n");
+	for(i=0;i<c;i++)
+	{
+		for(j=0;j<r;j++)
+		{
+			printf("%d ",a[j][i]);
+		}printf("\n");
+	}
+	for(i=0;i<1;i++)
+	{
+		for(j=0;j<1;j++)
+		{
+			if(a[i][j]==a[i + 1][j + 1])
+			{
+				printf("The given matrix is symmetric matrix\n");break;
+			}
+			else
+			{
+				printf("The given matrix is not symmetric matrix\n");break;
+			}
+		}
+	}
+	
+}

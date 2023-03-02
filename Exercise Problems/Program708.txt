@@ -1,0 +1,25 @@
+void fibonacci(int n);//declaration
+void fibonacci(int n)
+{
+	int n1=0,n2=1,temp=1;
+	printf("The Fibonacci series is : %d",n1);
+	while(n2<=n)
+	{
+		temp=n1+n2;
+		n1=n2;
+		n2=temp;
+		printf(" %d",n1);
+	}
+	printf("\n");
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program708a.c"
+void main() {
+	int number;
+	printf("Enter the maximum limit to generate the Fibonacci series : ");
+	scanf("%d", &number);
+	fibonacci(number);
+}

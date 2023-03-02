@@ -1,0 +1,66 @@
+#include<stdio.h>
+void main()
+{
+	int r1,r2,c2,c1,i,j;
+	int A[50][50],B[50][50],C[50][50];
+	printf("Enter the row & column sizes of matrix-1 : ");
+	scanf("%d%d",&r1,&c1);
+	printf("Enter matrix-1 %d elements : ",r1*c1);
+	for(i=0;i<r1;i++)
+	{
+		for(j=0;j<c1;j++)
+		{
+			scanf("%d",&A[i][j]);
+		}
+	}
+	printf("Enter the row & column sizes of matrix-2 : ");
+	scanf("%d%d",&r2,&c2);
+	printf("Enter matrix-2 %d elements : ",r2*c2);
+	for(i=0;i<r2;i++)
+	{
+		for(j=0;j<c2;j++)
+		{
+			scanf("%d",&B[i][j]);
+		}
+	}
+	printf("The given matrix-1 is\n");
+	for(i=0;i<r1;i++)
+	{
+	 for(j=0;j<c1;j++)
+	          {
+	           	printf("%d ",A[i][j]);
+	            }
+	         printf("\n");
+	       }
+	       printf("The given matrix-2 is\n") ;
+		for(i=0;i<r2;i++)
+	      {
+		for(j=0;j<c2;j++)
+		{
+			printf("%d ",B[i][j]);
+		}
+		printf("\n");
+      }
+	if(r1==r2&&c1==c2)
+	{  for(i=0;i<r1;i++)
+	  {
+		for(j=0;j<c1;j++)
+		{
+			C[i][j]=A[i][j]+B[i][j];
+		}
+	  }
+	  printf("Addition of two matrices is\n");
+	  for(i=0;i<r2;i++)
+	  {
+		for(j=0;j<c2;j++)
+		{
+			printf("%d ", C[i][j]) ;
+		}
+			printf("\n");
+	  }
+	}
+	else
+	{
+		printf("Addition is not possible\n");
+	}
+}

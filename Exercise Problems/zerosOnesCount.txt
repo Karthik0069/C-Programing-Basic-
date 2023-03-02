@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int no,bno=0,os=0,zs=0,count=0;
+	printf("Enter a decimal number : ");
+	scanf("%d",&no);
+	while(no!=0)
+	{
+		int rem=no%2;
+		if(rem==0)
+		zs++;
+		else
+		os++;
+		int c=pow(10,count);
+		bno=bno+rem*c;
+		no=no/2;
+		count++;
+	}
+	printf("Binary number : %d",bno);
+	printf("\nNumber of zero's : %d",zs);
+	printf("\nNumber of one's : %d\n",os);
+	return 0;
+}

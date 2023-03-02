@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main()
+{
+	float a,b;
+	printf("Enter F : ");
+	scanf("%f",&a);
+	b=(5.000/9.000)*(a-32.000);
+	printf("C = %f\n",b);
+	
+}

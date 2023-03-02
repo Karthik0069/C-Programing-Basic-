@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char a[50];
+	printf("Enter a string : ");
+	gets(a);
+	int len;
+	len=strlen(a);
+	printf("length %d\n",len);
+}

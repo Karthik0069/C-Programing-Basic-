@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char s1[50],s2[50],s3[50];
+	printf("Enter two strings : ");
+	scanf("%s%s",s1,s2);
+	int len;
+	len=strlen(s1);
+	printf("The length of %s : %d\n",s1,len);
+	strcpy(s3,s1);
+	printf("The copied string of %s : %s\n",s3,s1);
+	if(strcmp(s2,s1)==0)
+	{
+   	   	 printf("Both strings are equal\n");
+	}
+    else if(strcmp(s2,s1)<0)
+    {
+		 printf("%s is greater than %s\n",s1,s2);
+    }
+    else
+		 printf("%s is less than %s\n",s1,s2);
+	strcat(s1,s2);
+	printf("The concatenated string : %s\n",s1);
+}
+

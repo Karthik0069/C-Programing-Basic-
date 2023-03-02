@@ -1,0 +1,27 @@
+#include <stdio.h>
+void main() {
+	FILE *fp, *fp1, *fp2;
+	char ch;
+	fp = fopen("SampleTextFile1.txt", "w"); // Open a new file in write mode
+	printf("Enter the text with @ at end : ");
+	while ((ch=getchar())!='@') { // Read loop till get @ at the end
+		putc(ch, fp);
+	}
+	putc(ch, fp);
+	fclose(fp);
+	fp1 = fopen("SampleTextFile1.txt", "r"); // Open an existed file in read mode
+	fp2 = fopen("SampleTextFile2.txt", "w"); // Open a new file in write mode
+	while ((ch=getc(fp1))!='@') { // Repeat loop till get @ at the end of existed file
+		putc(ch, fp2);
+	}
+	putc(ch, fp2);
+	fclose(fp1); // Close the existed file
+	fclose(fp2); // Close the copied file
+	fp2 = fopen("SampleTextFile2.txt", "r"); // Open the copied file in read mode
+	printf("Copied text is : ");
+	while ((ch=getc(fp2))!='@') { // Repeat loop till get @ at the end of copied file
+		putchar(ch);
+	}
+	printf("\n");
+	fclose(fp2); // Close the copied file
+}

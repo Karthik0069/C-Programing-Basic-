@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+	char a[50],ab[50];
+	printf("string1 : ");
+	gets(a);
+	printf("string2 : ");
+	gets(ab);
+	if(strcmp(a,ab)==0)
+	printf("equal\n");
+	else
+	printf("not equal\n");
+}

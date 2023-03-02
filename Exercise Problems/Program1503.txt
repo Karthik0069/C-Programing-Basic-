@@ -1,0 +1,39 @@
+#include <stdio.h>
+void main() {
+	FILE *fp1, *fp2, *fp3;
+	char ch;
+	fp1 = fopen("SampleDataFile1.txt", "w"); // Open file in corresponding mode
+	printf("Enter the text with @ at end for file-1 :\n");
+	while ((ch=getchar())!='@') { // Write the condition
+		putc(ch, fp1);
+	}
+	putc(ch, fp1);
+	fclose(fp1);
+	fp2 = fopen("SampleDataFile2.txt", "w"); // Open file in corresponding mode
+	printf("Enter the text with @ at end for file-2 :\n");
+	while ((ch=getchar())!='@') { // Write the condition
+		putc(ch, fp2);
+	}
+	putc(ch, fp2);
+	fclose(fp2);
+	fp1 = fopen("SampleDataFile1.txt", "r"); // Open a first existed file in read mode
+	fp3 = fopen("SampleDataFile3.txt", "w"); // Open a new file in write mode
+	while ((ch=getc(fp1))!='@') { // Repeat loop till get @ at the end of existed file
+		putc(ch, fp3);
+	}
+	fclose(fp1); // Close the first existed file
+	fp2 = fopen("SampleDataFile2.txt", "r"); // Open a secong existed file in read mode
+	while ((ch=getc(fp2))!='@') { // Repeat loop till get @ at the end of existed file
+		putc(ch, fp3);
+	}
+	putc(ch, fp3);
+	fclose(fp2);
+	fclose(fp3);
+	fp3 = fopen("SampleDataFile3.txt", "r"); // Open the merged file in read mode
+	printf("Merged text is : ");
+	while ((ch=getc(fp1))!='@') { // Repeat loop till get @ at the end of merged file
+		putchar(ch);
+	}
+	printf("\n");
+	fclose(fp3); // Close the merged file
+}

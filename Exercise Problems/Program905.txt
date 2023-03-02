@@ -1,0 +1,21 @@
+int power(int x,int y);//declaration
+int power(int x,int y)//function call
+{
+	if(y==0)
+	return 1;
+	else
+	return (x*power(x,y-1));
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program905a.c"
+void main() {
+	int m, n;
+	printf("Enter a number : ");
+	scanf("%d", &m);
+	printf("Enter power : ");
+	scanf("%d", &n);
+	printf("%d to the power of %d is : %d\n", m, n, power(m, n));
+}

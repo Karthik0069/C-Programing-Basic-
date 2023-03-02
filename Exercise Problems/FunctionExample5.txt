@@ -1,0 +1,24 @@
+float power(float x,float y);
+float power(float x,float y)
+{
+	int i;
+	float result=x;
+	for(i=1;i<y;i++)
+	result=result*x;
+	return result;
+}
+
+//Main
+
+#include <stdio.h>
+#include "FunctionsExample5a.c"
+void main() {
+	float result, x;
+	int n;
+	printf("Enter value of x : ");
+	scanf("%f", &x);
+	printf("Enter value of  : ");
+	scanf("%d", &n);
+	result = power(x, n);
+    printf("%f^%d = %f\n", x, n, result);
+}

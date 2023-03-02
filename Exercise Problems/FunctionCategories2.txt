@@ -1,0 +1,16 @@
+#include <stdio.h>
+// Wvc[[rite the functions
+
+void main() {
+	print();
+	hello();
+	print();
+}
+print()
+{
+	printf("...***...\n");
+}
+hello()
+{
+	printf("Hello! CodeTantra\n");
+}

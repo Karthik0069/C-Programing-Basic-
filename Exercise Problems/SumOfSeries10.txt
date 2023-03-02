@@ -1,0 +1,10 @@
+#include<stdio.h>
+void main() 
+{
+	float i,s=0, n ;
+	printf("Enter n value : ");
+	scanf("%f",&n);
+	for(i=1;i<=n;i++)
+	s=s+1/i;
+	printf("Result : %f\n",s);
+}

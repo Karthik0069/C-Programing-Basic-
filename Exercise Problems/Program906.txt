@@ -1,0 +1,19 @@
+int gcd(int n1,int n2);
+int gcd(int n1,int n2)
+{
+	if(n2!=0)
+	return gcd(n2,n1%n2);
+	else
+	return n1;
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program906a.c"
+void main() {
+	int a, b;
+	printf("Enter two integer values : ");
+	scanf("%d %d", &a, &b);
+	printf("The gcd of two numbers %d and %d = %d\n", a, b, gcd(a, b));
+}

@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int s=1,x,n,i;
+	printf("Enter x value : ");
+	scanf("%d",&x);
+	printf("Enter n value : ");
+	scanf("%d",&n);
+	for(i=0;i<=n-1;i++)
+	{
+		s=s+pow(x,i+1);
+	}
+	printf("Sum of the series 1 + x + .... + x ^ %d = %d\n",n,s);
+}

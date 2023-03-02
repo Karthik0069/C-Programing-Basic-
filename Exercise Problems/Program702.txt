@@ -1,0 +1,19 @@
+void largest(int a,int b);//definition
+void largest(int a,int b)//function call
+{
+	if(a>b)/*function body*/
+	printf("Largest element = %d\n",a);
+	else
+	printf("Largest element = %d\n",b);
+}
+
+//Main
+
+#include <stdio.h>
+#include "Program702a.c"
+void main() {
+	int a, b;
+	printf("Enter two numbers : ");
+	scanf("%d%d" , &a, &b);
+	largest(a, b);
+}

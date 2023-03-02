@@ -1,0 +1,38 @@
+void read(struct student *s);
+void display(struct student p);
+void read(struct student *s)
+{
+	printf("Enter student number : ");
+	scanf("%d",&s->regdno);
+	printf("Enter student name : ");
+	scanf("%s",s->name);
+	printf("Enter date of joining : ");
+	scanf("%d%d%d",&s->doj.day,&s->doj.month,&s->doj.year);
+}
+void display(struct student s)
+{
+	printf("Number : %d\n",s.regdno);
+	printf("Name : %s\n",s.name);
+	printf("Date of joining : %d-%d-%d\n",s.doj.day,s.doj.month,s.doj.year);
+}
+
+//Main
+
+#include <stdio.h>
+struct student {
+	int regdno;
+	char name[30];
+	struct date {
+		int day;
+		int month;
+		int year;
+	}doj;
+};
+#include "NestedStructureFunctions.c"
+void main() {
+	int i;
+	struct student s;
+	read(&s);
+	printf("The student details are : \n");
+	display(s);
+}
