@@ -1,0 +1,8 @@
+#include <stdio.h>
+#define HEIGHT 100
+void main() {
+	printf("Initially defined value for height : %d\n", HEIGHT);
+	#undef HEIGHT
+	#define HEIGHT 600
+	printf("Value of height after undefining and redefining: %d\n", HEIGHT);
+}

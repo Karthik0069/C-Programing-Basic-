@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main() {
+	FILE *fp;
+	int number;
+	fp = fopen("sample-numbers.txt", "w");
+	printf("Enter numbers up to 0 : ");
+	scanf("%d", &number);
+	while (number != 0) {
+		putw(number, fp);
+		scanf("%d", &number);
+	}
+	putw(number, fp);
+	fclose(fp);
+	fp = fopen("sample-numbers.txt", "r");
+	printf("The given numbers are : ");
+	while ((number = getw(fp)) != 0) {
+		printf("%d ", number);
+	}
+	fclose(fp);
+}

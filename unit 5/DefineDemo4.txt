@@ -1,0 +1,7 @@
+#include <stdio.h>
+#define CONCAT(X, Y) X##Y
+
+void main() {
+	printf("The result = %d\n", CONCAT(20, 17));
+	printf("The result = %d\n", CONCAT(500, 072));
+}

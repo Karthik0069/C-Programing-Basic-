@@ -1,0 +1,6 @@
+#include <stdio.h>
+#define CUBE(Y) Y*Y*Y
+void main() {
+	printf("Cube of 3 = %d\n", CUBE(3));
+	printf("Cube of 5 = %d\n", CUBE(5));
+}
